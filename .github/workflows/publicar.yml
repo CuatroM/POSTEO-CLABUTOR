@@ -1,0 +1,47 @@
+name: Publicar en Instagram
+
+on:
+  schedule:
+    # Lunes, miércoles y viernes a las 10:00 de Argentina (13:00 UTC)
+    - cron: "0 13 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      carpeta:
+        description: "Carpeta a publicar (vacío = la próxima pendiente)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Publicar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          CARPETA: ${{ github.event.inputs.carpeta }}
+        run: python publicar.py
+
+      - name: Guardar registro de publicados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add publicados.txt 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Post publicado en Instagram"
+          git push
