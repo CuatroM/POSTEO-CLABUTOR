@@ -77,6 +77,9 @@ def elegir_post():
 
 
 def main():
+    cuenta = api("GET", "me", fields="username")
+    print(f"Conectado a Instagram como @{cuenta.get('username')}")
+
     carpeta = elegir_post()
     if not carpeta:
         print("No hay posts pendientes para hoy.")
