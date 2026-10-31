@@ -26,6 +26,8 @@ TOKEN = os.environ.get("IG_TOKEN", "").strip()
 IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
 if not TOKEN:
     sys.exit("ERROR: falta el secreto IG_TOKEN (o está vacío).")
+print(f"Token: {len(TOKEN)} caracteres, empieza con '{TOKEN[:2]}'"
+      + (" (TIENE ESPACIOS O COMILLAS)" if any(c in TOKEN for c in " \"'=") else ""))
 if not IG_USER_ID.isdigit():
     sys.exit(f"ERROR: el secreto IG_USER_ID tiene que ser solo números (tiene {len(IG_USER_ID)} caracteres).")
 REPO = os.environ.get("GITHUB_REPOSITORY", "CuatroM/POSTEO-CLABUTOR")
