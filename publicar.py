@@ -22,8 +22,12 @@ from urllib.parse import quote
 import requests
 
 API = "https://graph.instagram.com/v25.0"
-TOKEN = os.environ["IG_TOKEN"].strip()
-IG_USER_ID = os.environ["IG_USER_ID"].strip()
+TOKEN = os.environ.get("IG_TOKEN", "").strip()
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+if not TOKEN:
+    sys.exit("ERROR: falta el secreto IG_TOKEN (o está vacío).")
+if not IG_USER_ID.isdigit():
+    sys.exit(f"ERROR: el secreto IG_USER_ID tiene que ser solo números (tiene {len(IG_USER_ID)} caracteres).")
 REPO = os.environ.get("GITHUB_REPOSITORY", "CuatroM/POSTEO-CLABUTOR")
 RAMA = os.environ.get("GITHUB_REF_NAME", "main")
 CARPETA_FORZADA = os.environ.get("CARPETA", "").strip()
@@ -36,10 +40,14 @@ HOY = datetime.now(timezone(timedelta(hours=-3))).date()  # hora de Argentina
 
 def api(metodo, ruta, **params):
     params["access_token"] = TOKEN
-    r = requests.request(metodo, f"{API}/{ruta}", params=params, timeout=60)
-    datos = r.json()
+    try:
+        r = requests.request(metodo, f"{API}/{ruta}", params=params, timeout=60)
+        datos = r.json()
+    except Exception as e:
+        sys.exit(f"ERROR: no se pudo conectar con Instagram ({e}).")
     if "error" in datos:
-        sys.exit(f"Error de Instagram en {ruta}: {datos['error'].get('message')}")
+        err = datos["error"]
+        sys.exit(f"ERROR de Instagram: {err.get('message')} (código {err.get('code')})")
     return datos
 
 
