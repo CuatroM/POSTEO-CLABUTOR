@@ -21,8 +21,10 @@ from urllib.parse import quote
 
 import requests
 
-API = "https://graph.instagram.com/v25.0"
 TOKEN = os.environ.get("IG_TOKEN", "").strip()
+# Token de "inicio de sesión con Instagram" (IGAA...) o de "inicio de sesión con Facebook" (EAA...)
+ES_FACEBOOK = TOKEN.startswith("EA")
+API = "https://graph.facebook.com/v25.0" if ES_FACEBOOK else "https://graph.instagram.com/v25.0"
 IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
 if not TOKEN:
     sys.exit("ERROR: falta el secreto IG_TOKEN (o está vacío).")
@@ -40,13 +42,15 @@ PUBLICADOS = RAIZ / "publicados.txt"
 HOY = datetime.now(timezone(timedelta(hours=-3))).date()  # hora de Argentina
 
 
-def api(metodo, ruta, **params):
+def api(metodo, ruta, salir=True, **params):
     params["access_token"] = TOKEN
     try:
         r = requests.request(metodo, f"{API}/{ruta}", params=params, timeout=60)
         datos = r.json()
     except Exception as e:
         sys.exit(f"ERROR: no se pudo conectar con Instagram ({e}).")
+    if "error" in datos and not salir:
+        return datos
     if "error" in datos:
         err = datos["error"]
         sys.exit(f"ERROR de Instagram: {err.get('message')} (código {err.get('code')})")
@@ -87,7 +91,25 @@ def elegir_post():
 
 
 def main():
-    cuenta = api("GET", "me", fields="username")
+    if ES_FACEBOOK:
+        info = api("GET", "debug_token", salir=False, input_token=TOKEN).get("data", {})
+        vence = info.get("expires_at") or info.get("data_access_expires_at")
+        if vence:
+            print(f"El token vence el {datetime.fromtimestamp(vence, timezone(timedelta(hours=-3))):%d/%m/%Y %H:%M}")
+    cuenta = api("GET", IG_USER_ID, salir=False, fields="username")
+    if "error" in cuenta:
+        print(f"ERROR: el IG_USER_ID {IG_USER_ID} no corresponde a una cuenta de Instagram accesible con este token.")
+        print(f"Detalle: {cuenta['error'].get('message')}")
+        if ES_FACEBOOK:
+            paginas = api("GET", "me/accounts", salir=False,
+                          fields="name,instagram_business_account{id,username}").get("data", [])
+            encontradas = [p for p in paginas if p.get("instagram_business_account")]
+            for p in encontradas:
+                ig = p["instagram_business_account"]
+                print(f"  -> Cuenta encontrada: @{ig.get('username')}  IG_USER_ID = {ig['id']}  (página: {p['name']})")
+            if not encontradas:
+                print("  -> El token no ve ninguna página de Facebook con Instagram vinculado.")
+        sys.exit(1)
     print(f"Conectado a Instagram como @{cuenta.get('username')}")
 
     carpeta = elegir_post()
