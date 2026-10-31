@@ -90,27 +90,56 @@ def elegir_post():
     return None
 
 
+def aviso(msg):
+    # Se ve en el log y como anotación del workflow
+    print(msg)
+    print(f"::notice::{msg}")
+
+
+def diagnostico_facebook():
+    """Revisa el token de Facebook y devuelve los IDs de Instagram que puede usar."""
+    candidatos = {}
+    info = api("GET", "debug_token", salir=False, input_token=TOKEN).get("data", {})
+    if info:
+        aviso(f"Diag: tipo={info.get('type')} valido={info.get('is_valid')} "
+              f"app={info.get('application')} vence={info.get('expires_at')} "
+              f"permisos={','.join(info.get('scopes', []))}")
+        for g in info.get("granular_scopes", []):
+            if g.get("scope", "").startswith("instagram"):
+                for t in g.get("target_ids", []):
+                    candidatos.setdefault(t, "permiso " + g["scope"])
+    else:
+        aviso("Diag: no se pudo leer la información del token")
+    yo = api("GET", "me", salir=False, fields="id,name")
+    aviso(f"Diag: el token pertenece a: {yo.get('name')} ({yo.get('id')})" if "error" not in yo
+          else f"Diag: me -> {yo['error'].get('message')}")
+    pag = api("GET", "me", salir=False, fields="instagram_business_account{id,username}")
+    if "instagram_business_account" in pag:
+        ig = pag["instagram_business_account"]
+        candidatos[ig["id"]] = f"@{ig.get('username')} (token de página)"
+    for p in api("GET", "me/accounts", salir=False,
+                 fields="name,instagram_business_account{id,username}").get("data", []):
+        ig = p.get("instagram_business_account")
+        aviso(f"Diag: página '{p.get('name')}' -> Instagram: {ig.get('username') if ig else 'NO VINCULADO'}")
+        if ig:
+            candidatos[ig["id"]] = f"@{ig.get('username')} (página {p.get('name')})"
+    for i, origen in candidatos.items():
+        aviso(f"Diag: cuenta de Instagram disponible: IG_USER_ID={i} -> {origen}")
+    return list(candidatos)
+
+
 def main():
-    if ES_FACEBOOK:
-        info = api("GET", "debug_token", salir=False, input_token=TOKEN).get("data", {})
-        vence = info.get("expires_at") or info.get("data_access_expires_at")
-        if vence:
-            print(f"El token vence el {datetime.fromtimestamp(vence, timezone(timedelta(hours=-3))):%d/%m/%Y %H:%M}")
+    global IG_USER_ID
+    candidatos = diagnostico_facebook() if ES_FACEBOOK else []
     cuenta = api("GET", IG_USER_ID, salir=False, fields="username")
+    if "error" in cuenta and len(candidatos) == 1:
+        aviso(f"El IG_USER_ID cargado no sirve; uso el que encontré: {candidatos[0]}")
+        IG_USER_ID = candidatos[0]
+        cuenta = api("GET", IG_USER_ID, salir=False, fields="username")
     if "error" in cuenta:
-        print(f"ERROR: el IG_USER_ID {IG_USER_ID} no corresponde a una cuenta de Instagram accesible con este token.")
-        print(f"Detalle: {cuenta['error'].get('message')}")
-        if ES_FACEBOOK:
-            paginas = api("GET", "me/accounts", salir=False,
-                          fields="name,instagram_business_account{id,username}").get("data", [])
-            encontradas = [p for p in paginas if p.get("instagram_business_account")]
-            for p in encontradas:
-                ig = p["instagram_business_account"]
-                print(f"  -> Cuenta encontrada: @{ig.get('username')}  IG_USER_ID = {ig['id']}  (página: {p['name']})")
-            if not encontradas:
-                print("  -> El token no ve ninguna página de Facebook con Instagram vinculado.")
+        aviso(f"ERROR: el IG_USER_ID no corresponde a una cuenta accesible: {cuenta['error'].get('message')}")
         sys.exit(1)
-    print(f"Conectado a Instagram como @{cuenta.get('username')}")
+    aviso(f"Conectado a Instagram como @{cuenta.get('username')}")
 
     carpeta = elegir_post()
     if not carpeta:
