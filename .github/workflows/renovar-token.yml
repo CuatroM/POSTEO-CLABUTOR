@@ -18,6 +18,10 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          if [[ "$IG_TOKEN" == EA* ]]; then
+            echo "El token es de Facebook (token de página): no vence, no hace falta renovarlo."
+            exit 0
+          fi
           if [ -z "$GH_TOKEN" ]; then
             echo "Falta el secreto GH_PAT, no se puede guardar el token renovado."
             exit 1
