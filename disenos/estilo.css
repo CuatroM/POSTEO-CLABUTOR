@@ -1,0 +1,54 @@
+/* Sistema visual Clabutor — mismo estilo en todos los posteos */
+@font-face { font-family: "Titular"; src: url("fuentes/InterDisplay-Black.otf"); font-weight: 900; }
+@font-face { font-family: "Titular"; src: url("fuentes/InterDisplay-Bold.otf"); font-weight: 700; }
+@font-face { font-family: "Texto"; src: url("fuentes/Inter-Medium.otf"); font-weight: 500; }
+@font-face { font-family: "Texto"; src: url("fuentes/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "Texto"; src: url("fuentes/Inter-Bold.otf"); font-weight: 700; }
+
+:root {
+  --rojo: #E10600;
+  --negro: #111111;
+  --gris-texto: #3C3C3C;
+  --gris-claro: #F2F2F2;
+  --gris-linea: #DEDEDE;
+  --blanco: #FFFFFF;
+  --margen: 80px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; }
+body { background: var(--blanco); color: var(--negro); font-family: "Texto", sans-serif; overflow: hidden; }
+
+.placa { position: relative; width: 1080px; height: 1350px; padding: 0 var(--margen); display: flex; flex-direction: column; }
+
+/* Encabezado fijo */
+.encabezado { height: 150px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--negro); }
+.marca { font-family: "Titular"; font-weight: 900; font-size: 38px; letter-spacing: 3px; display: flex; align-items: center; gap: 14px; }
+.marca i { width: 22px; height: 22px; background: var(--rojo); display: inline-block; }
+.rubro { font-family: "Texto"; font-weight: 600; font-size: 20px; letter-spacing: 4px; color: var(--gris-texto); text-transform: uppercase; }
+
+/* Pie fijo */
+.pie { position: absolute; left: var(--margen); right: var(--margen); bottom: 0; height: 110px; display: flex; align-items: center; justify-content: space-between; border-top: 2px solid var(--negro); }
+.usuario { font-weight: 700; font-size: 26px; }
+.progreso { display: flex; align-items: center; gap: 18px; font-family: "Titular"; font-weight: 700; font-size: 26px; }
+.barras { display: flex; gap: 8px; }
+.barras span { width: 44px; height: 8px; background: var(--gris-linea); }
+.barras span.activa { background: var(--rojo); }
+
+/* Tipografía */
+.volanta { margin-top: 60px; font-weight: 700; font-size: 24px; letter-spacing: 5px; color: var(--rojo); text-transform: uppercase; display: flex; align-items: center; gap: 16px; }
+.volanta::before { content: ""; width: 56px; height: 8px; background: var(--rojo); }
+h1 { font-family: "Titular"; font-weight: 900; text-transform: uppercase; line-height: .9; letter-spacing: -3px; margin-top: 26px; }
+h1 em { font-style: normal; color: var(--rojo); }
+.bajada { font-weight: 500; font-size: 36px; line-height: 1.32; color: var(--gris-texto); margin-top: 30px; }
+.bajada b { color: var(--negro); font-weight: 700; }
+
+/* Tarjetas de producto */
+.producto { background: var(--gris-claro); display: flex; flex-direction: column; overflow: hidden; }
+.producto .foto { flex: 1; background: var(--blanco); margin: 14px 14px 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.producto .foto img { max-width: 92%; max-height: 92%; object-fit: contain; }
+.producto .sinfoto { border: 3px dashed #BDBDBD; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9A9A9A; font-weight: 700; font-size: 20px; letter-spacing: 2px; gap: 8px; text-align: center; }
+.producto .datos { padding: 16px 20px 20px; }
+.producto .nombre { font-family: "Titular"; font-weight: 700; font-size: 27px; line-height: 1.1; }
+.producto .sku { font-weight: 600; font-size: 18px; color: #8A8A8A; letter-spacing: 1px; margin-top: 6px; }
+
+.etiqueta { background: var(--rojo); color: var(--blanco); font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 3px; padding: 12px 24px; display: inline-block; }
