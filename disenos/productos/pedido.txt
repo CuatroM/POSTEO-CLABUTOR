@@ -1,3 +1,6 @@
 # Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
 # Al guardar este archivo, GitHub descarga las fotos a esta carpeta (ver descarga.log).
 # Ya descargados: 15108032TELEST, 104070008, KHE2445, GE3460, 69510063
+7132 | llave de impacto bremen
+KLDDE52 | desmalezadora kld
+14108012TEL | tel dry
