@@ -56,7 +56,9 @@ def api(metodo, ruta, salir=True, **params):
         return datos
     if "error" in datos:
         err = datos["error"]
-        sys.exit(f"ERROR de Instagram: {err.get('message')} (código {err.get('code')})")
+        msg = f"ERROR de Instagram: {err.get('message')} (código {err.get('code')}, subcódigo {err.get('error_subcode')})"
+        print(f"::error::{msg}")
+        sys.exit(msg)
     return datos
 
 
@@ -71,6 +73,7 @@ def esperar_listo(contenedor_id, intentos=60):
         if estado == "FINISHED":
             return
         if estado in ("ERROR", "EXPIRED"):
+            print(f"::error::Instagram no pudo procesar el contenido ({estado}).")
             sys.exit(f"Instagram no pudo procesar el contenido ({estado}).")
         time.sleep(10)
     sys.exit("Instagram tardó demasiado en procesar el contenido.")
@@ -131,6 +134,27 @@ def diagnostico_facebook():
     return list(candidatos)
 
 
+def publicar_historia(img, intentos=4):
+    """Crea y publica una historia, reintentando si Instagram todavía no la tiene lista."""
+    for intento in range(1, intentos + 1):
+        h = api("POST", f"{IG_USER_ID}/media", salir=False, media_type="STORIES", image_url=url_publica(img))
+        if "error" not in h:
+            esperar_listo(h["id"])
+            for _ in range(6):
+                pub = api("POST", f"{IG_USER_ID}/media_publish", salir=False, creation_id=h["id"])
+                if "error" not in pub:
+                    print(f"Historia {img.name} publicada. ID de Instagram: {pub['id']}")
+                    return
+                aviso(f"Reintento al publicar {img.name}: {pub['error'].get('message')}")
+                time.sleep(15)
+        else:
+            aviso(f"Reintento {intento} al subir {img.name}: {h['error'].get('message')} "
+                  f"(código {h['error'].get('code')}, subcódigo {h['error'].get('error_subcode')})")
+        time.sleep(20 * intento)
+    print(f"::error::No se pudo publicar la historia {img.name} después de {intentos} intentos.")
+    sys.exit(1)
+
+
 def main():
     global IG_USER_ID
     candidatos = diagnostico_facebook() if ES_FACEBOOK else []
@@ -161,12 +185,18 @@ def main():
     if "historia" in carpeta.name.lower():
         if not imagenes:
             sys.exit(f"posts/{carpeta.name} no tiene imágenes .jpg para las historias.")
+        # Cada historia publicada se anota como carpeta/archivo: si algo falla a mitad,
+        # al volver a correr sigue desde la que falta, sin repetir las ya publicadas.
+        ya = set(PUBLICADOS.read_text(encoding="utf-8").split()) if PUBLICADOS.exists() else set()
         for img in imagenes:
-            h = api("POST", f"{IG_USER_ID}/media", media_type="STORIES", image_url=url_publica(img))
-            esperar_listo(h["id"])
-            pub = api("POST", f"{IG_USER_ID}/media_publish", creation_id=h["id"])
-            print(f"Historia {img.name} publicada. ID de Instagram: {pub['id']}")
-            time.sleep(5)
+            clave = f"{carpeta.name}/{img.name}"
+            if clave in ya:
+                print(f"Historia {img.name} ya publicada, sigo.")
+                continue
+            publicar_historia(img)
+            with PUBLICADOS.open("a", encoding="utf-8") as f:
+                f.write(clave + "\n")
+            time.sleep(8)
         with PUBLICADOS.open("a", encoding="utf-8") as f:
             f.write(carpeta.name + "\n")
         return
