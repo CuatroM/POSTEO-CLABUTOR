@@ -58,7 +58,7 @@ def libreta():
 def placas(g):
     h1 = f'''
 <h1 style="font-size:120px;color:{AZUL}">¿Qué te<br>falta?<br><em>Armá<br>tu lista</em></h1>
-<p class="bajada">En 4 días arranca el CyberMonday.<br><b>Mirá lo que viene.</b></p>
+<p class="bajada">Mañana arranca el CyberMonday.<br><b>Mirá lo que viene.</b></p>
 <div style="display:flex;justify-content:center;margin-top:40px">{libreta()}</div>
 '''
 
