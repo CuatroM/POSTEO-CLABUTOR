@@ -40,6 +40,7 @@ body { background: var(--blanco); color: var(--negro); font-family: "Texto", san
 h1 { font-family: "Titular"; font-weight: 900; text-transform: uppercase; line-height: .9; letter-spacing: -3px; margin-top: 26px; }
 h1 em { font-style: normal; color: var(--rojo); }
 .bajada { font-weight: 500; font-size: 36px; line-height: 1.32; color: var(--gris-texto); margin-top: 30px; }
+.bajada, .nombre, p { text-wrap: pretty; }
 .bajada b { color: var(--negro); font-weight: 700; }
 
 /* Tarjetas de producto */

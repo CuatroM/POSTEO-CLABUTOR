@@ -33,7 +33,7 @@ def placas(g):
     p2 = f'''
 <div class="volanta">Bulonería</div>
 <h1 style="font-size:112px">Desde el<br>tornillo<br><em>más chico</em></h1>
-<p class="bajada" style="font-size:32px">Bulones, tornillos, tuercas, arandelas, tacos y varillas. <b>Métricos, pulgadas, inoxidable y grado 8.8.</b></p>
+<p class="bajada" style="font-size:32px">Bulones, tornillos, tuercas, arandelas, tacos y varillas.<br><b>Métricos, pulgadas, inoxidable y grado 8.8.</b></p>
 <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;height:150px;margin-top:34px">{iconos}</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;height:300px;margin-top:20px">{g.tarjeta(P2[0])}{g.tarjeta(P2[1])}</div>
 '''
@@ -41,7 +41,7 @@ def placas(g):
     p3 = f'''
 <div class="volanta">Herramientas y maquinaria</div>
 <h1 style="font-size:112px">Hasta la<br>máquina<br><em>más grande</em></h1>
-<p class="bajada" style="font-size:32px">Herramientas eléctricas, neumáticas, jardín, generadores y <b>maquinaria FEMA.</b></p>
+<p class="bajada" style="font-size:32px">Herramientas eléctricas, neumáticas, jardín, generadores<br>y <b>maquinaria FEMA.</b></p>
 <div style="position:relative;display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:1fr 1fr;gap:20px;height:520px;margin-top:36px">
   {g.tarjeta(P3[0], "grid-row:1 / span 2")}{g.tarjeta(P3[1])}{g.tarjeta(P3[2])}
   <div class="etiqueta" style="position:absolute;top:-22px;left:-14px">EN STOCK</div>
@@ -51,15 +51,12 @@ def placas(g):
     p4 = f'''
 <div class="volanta">Todo el país</div>
 <h1 style="font-size:124px">Más de<br><em>10.000</em><br>productos</h1>
-<div style="display:flex;justify-content:space-between;margin-top:34px">
-  <div style="width:470px">
-    <p class="bajada" style="font-size:32px;margin-top:0"><b>Casa central y sucursal en Córdoba.</b> Envíos a todo el país.</p>
-    <div style="background:#111;color:#fff;padding:36px 34px;margin-top:44px">
-      <div style="font-family:Titular;font-weight:900;font-size:46px;line-height:1.02;letter-spacing:-1px">Al mundo le falta un tornillo y <span style="color:#E10600">Clabutor</span> lo tiene.</div>
-    </div>
-    <div style="margin-top:30px;font-weight:700;font-size:28px">clabutor.com.ar</div>
+<p class="bajada" style="font-size:34px"><b>Casa central y sucursal en Córdoba.</b><br>Retiro en sucursal o entrega a domicilio.</p>
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-top:40px">
+  <div style="width:560px;background:#111;color:#fff;padding:40px 38px;margin-top:20px;white-space:nowrap">
+    <div style="font-family:Titular;font-weight:900;font-size:50px;line-height:1.02;letter-spacing:-1px">Al mundo le falta<br>un tornillo…<br>y <span style="color:#E10600">Clabutor</span> lo tiene.</div>
   </div>
-  <div style="margin-top:-10px;margin-right:-60px">{g.svg_mapa(300, [(-64.18, -31.42, "Córdoba")])}</div>
+  <div style="margin-top:-10px;margin-right:-40px">{g.svg_mapa(215, [(-64.18, -31.42, "Córdoba")])}</div>
 </div>
 '''
     return [p1, p2, p3, p4]

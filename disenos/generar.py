@@ -97,7 +97,7 @@ def marco(cuerpo, n, total, rubro):
 <body><div class="placa">
 <div class="encabezado"><div class="marca"><i></i>CLABUTOR</div><div class="rubro">{e(rubro)}</div></div>
 {cuerpo}
-<div class="pie"><div class="usuario">@clabutor.cba</div><div class="progreso"><div class="barras">{barras}</div>{n:02d} / {total:02d}</div></div>
+<div class="pie"><div class="usuario">www.clabutor.com.ar</div><div class="progreso"><div class="barras">{barras}</div>{n:02d} / {total:02d}</div></div>
 </div></body></html>'''
 
 
