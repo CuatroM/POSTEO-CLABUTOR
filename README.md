@@ -9,6 +9,7 @@ Publica en Instagram, por la API oficial de Meta, los posts que se cargan en la 
    - **Post simple:** una imagen `.jpg`.
    - **Carrusel:** de 2 a 10 imágenes `.jpg`, que se publican en orden alfabético (`1.jpg`, `2.jpg`, ...).
    - **Reel:** un video `.mp4`.
+   - **Historias:** si el nombre de la carpeta contiene `historia`, cada `.jpg` (1080×1920) se publica como historia, en orden (no lleva `texto.txt`).
    - **`texto.txt`:** el texto del post con los hashtags (máximo 2200 caracteres).
 3. Hacé commit. Listo.
 

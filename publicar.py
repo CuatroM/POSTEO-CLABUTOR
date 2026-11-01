@@ -6,6 +6,9 @@ Cada post es una carpeta dentro de posts/ con:
   - o un video .mp4             (se publica como Reel)
   - texto.txt                   (el texto del post, con hashtags)
 
+Historias: si el nombre de la carpeta contiene "historia", cada imagen .jpg
+(1080x1920) se publica como una historia, en orden alfabético (no lleva texto).
+
 Las carpetas se publican en orden alfabético. Las que empiezan con "_" se ignoran.
 Si el nombre empieza con una fecha (AAAA-MM-DD), no se publica antes de ese día.
 Las ya publicadas quedan anotadas en publicados.txt.
@@ -154,6 +157,19 @@ def main():
     imagenes = sorted(f for f in carpeta.iterdir() if f.suffix.lower() in (".jpg", ".jpeg"))
     videos = sorted(f for f in carpeta.iterdir() if f.suffix.lower() == ".mp4")
     print(f"Publicando: {carpeta.name}")
+
+    if "historia" in carpeta.name.lower():
+        if not imagenes:
+            sys.exit(f"posts/{carpeta.name} no tiene imágenes .jpg para las historias.")
+        for img in imagenes:
+            h = api("POST", f"{IG_USER_ID}/media", media_type="STORIES", image_url=url_publica(img))
+            esperar_listo(h["id"])
+            pub = api("POST", f"{IG_USER_ID}/media_publish", creation_id=h["id"])
+            print(f"Historia {img.name} publicada. ID de Instagram: {pub['id']}")
+            time.sleep(5)
+        with PUBLICADOS.open("a", encoding="utf-8") as f:
+            f.write(carpeta.name + "\n")
+        return
 
     if videos:
         c = api("POST", f"{IG_USER_ID}/media", media_type="REELS",
