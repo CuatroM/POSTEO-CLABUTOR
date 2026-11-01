@@ -78,6 +78,22 @@ def svg_mapa(ancho, marcas):
 
 
 # ---------- Piezas ----------
+FOTOS = AQUI / "fotos"
+
+
+def foto_lugar(nombre, estilo="", filtro="", falta="FOTO"):
+    """Foto de disenos/fotos/<nombre>.jpg; si no está, un recuadro que avisa qué foto falta."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        f = FOTOS / f"{nombre}{ext}"
+        if f.exists():
+            return f'<div class="foto-lugar" style="{estilo}"><img src="../../fotos/{f.name}" style="filter:{filtro}"></div>'
+    return f'<div class="foto-lugar" style="{estilo}"><div class="falta">{e(falta)}</div></div>'
+
+
+def pin(texto, estilo=""):
+    icono = ('<svg width="30" height="40" viewBox="0 0 30 40"><path d="M15 0C6.7 0 0 6.7 0 15c0 11 15 25 15 25s15-14 15-25C30 6.7 23.3 0 15 0z" fill="#E10600"/>'
+             '<circle cx="15" cy="15" r="6" fill="#fff"/></svg>')
+    return f'<div class="pin" style="{estilo}">{icono}{e(texto)}</div>'
 def foto_producto(sku):
     for ext in (".png", ".jpg", ".jpeg", ".webp"):
         f = PRODUCTOS / f"{sku}{ext}"
@@ -91,10 +107,10 @@ def tarjeta(p, estilo=""):
             f'<div class="datos"><div class="nombre">{e(p["nombre"])}</div><div class="sku">COD. {e(p["sku"])}</div></div></div>')
 
 
-def marco(cuerpo, n, total, rubro):
+def marco(cuerpo, n, total, rubro, fondo=""):
     barras = "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
     return f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../estilo.css"></head>
-<body><div class="placa">
+<body><div class="placa {fondo}">
 <div class="encabezado"><div class="marca"><i></i>CLABUTOR</div><div class="rubro">{e(rubro)}</div></div>
 {cuerpo}
 <div class="pie"><div class="usuario">www.clabutor.com.ar</div><div class="progreso"><div class="barras">{barras}</div>{n:02d} / {total:02d}</div></div>
@@ -131,7 +147,8 @@ def generar(modulo):
             fondo, html_cuerpo = cuerpo
             pagina = marco_historia(html_cuerpo, i, len(placas), fondo, getattr(post, "CINTA", "cyber"))
         else:
-            pagina = marco(cuerpo, i, len(placas), post.RUBRO)
+            fondo, cuerpo = cuerpo if isinstance(cuerpo, tuple) else ("", cuerpo)
+            pagina = marco(cuerpo, i, len(placas), post.RUBRO, fondo)
         (salida / f"placa-{i}.html").write_text(pagina, encoding="utf-8")
     (salida / "texto.txt").write_text(post.TEXTO.strip() + "\n", encoding="utf-8")
     print(salida)

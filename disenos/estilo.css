@@ -53,3 +53,21 @@ h1 em { font-style: normal; color: var(--rojo); }
 .producto .sku { font-weight: 600; font-size: 18px; color: #8A8A8A; letter-spacing: 1px; margin-top: 6px; }
 
 .etiqueta { background: var(--rojo); color: var(--blanco); font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 3px; padding: 12px 24px; display: inline-block; }
+
+/* Variantes de fondo (misma estructura): .oscura = negro, .gris = gris claro */
+.placa.oscura { background: var(--negro); color: var(--blanco); }
+.placa.oscura .encabezado { border-bottom-color: var(--blanco); }
+.placa.oscura .pie { border-top-color: var(--blanco); }
+.placa.oscura .rubro { color: #BDBDBD; }
+.placa.oscura .bajada { color: #CFCFCF; }
+.placa.oscura .bajada b { color: var(--blanco); }
+.placa.oscura .barras span { background: #3A3A3A; }
+.placa.oscura .barras span.activa { background: var(--rojo); }
+.placa.gris { background: var(--gris-claro); }
+
+/* Fotos de lugares */
+.foto-lugar { position: relative; overflow: hidden; background: #DDD; }
+.foto-lugar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.foto-lugar .falta { position: absolute; inset: 0; border: 3px dashed #9A9A9A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #8A8A8A; font-weight: 700; font-size: 22px; letter-spacing: 2px; text-align: center; }
+.pin { position: absolute; display: flex; align-items: center; gap: 10px; background: var(--blanco); color: var(--negro); padding: 10px 18px 10px 12px; font-family: "Titular"; font-weight: 900; font-size: 24px; letter-spacing: 1px; }
+.pin svg { flex: none; }
