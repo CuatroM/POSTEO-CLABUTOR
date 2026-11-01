@@ -53,6 +53,15 @@ def encontrar(sku, consulta):
     return None
 
 
+LOG = []
+_print = print
+
+
+def print(*a):  # noqa: A001
+    LOG.append(" ".join(str(x) for x in a))
+    _print(*a)
+
+
 def main():
     if len(sys.argv) > 1:
         pedido = [(s, "") for s in sys.argv[1:]]
@@ -82,6 +91,7 @@ def main():
         print(f"  OK {prod['name']} ({sitio}) -> {destino.name} [{len(img.content)//1024} KB]")
     if faltan:
         print("Sin foto:", ", ".join(faltan))
+    (PRODUCTOS / "descarga.log").write_text("\n".join(LOG) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
