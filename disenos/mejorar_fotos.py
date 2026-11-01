@@ -40,7 +40,7 @@ def main():
             continue
         im = Image.open(f).convert("RGB")
         t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).float().div(255).unsqueeze(0)
-        out = tiles(modelo.model, t).clamp(0, 1)[0].permute(1, 2, 0).mul(255).round().byte().numpy()
+        out = tiles(modelo, t).clamp(0, 1)[0].permute(1, 2, 0).mul(255).round().byte().numpy()
         res = Image.fromarray(out)
         if res.width > 2400:
             res = res.resize((2400, round(res.height * 2400 / res.width)), Image.LANCZOS)
