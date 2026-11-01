@@ -43,3 +43,28 @@ html, body { width: 1080px; height: 1920px; }
 .precio-antes { font-weight: 600; font-size: 40px; color: #8A94A6; text-decoration: line-through; }
 .precio-cyber { font-family: "Titular"; font-weight: 900; font-size: 150px; line-height: .95; color: var(--naranja); letter-spacing: -4px; }
 .cuotas { font-family: "Titular"; font-weight: 700; font-size: 44px; margin-top: 10px; }
+
+/* Más fondos de campaña */
+.historia.gris { background: #E9EDF2; color: var(--azul); }
+.historia.gris .bajada { color: #42526B; }
+.historia.gris .bajada b { color: var(--azul); }
+.historia.verde { background: #0E4A2F; color: var(--blanco); }
+.historia.verde .bajada { color: #CFE3D6; }
+.historia.verde .bajada b { color: var(--blanco); }
+
+/* Tarjeta de adelanto: producto sobre fondo liso, precio tapado */
+.adelanto { background: var(--blanco); color: var(--azul); display: flex; flex-direction: column; overflow: hidden; }
+.adelanto .foto-a { flex: 1; display: flex; align-items: center; justify-content: center; padding: 26px; min-height: 0; }
+.adelanto .foto-a img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.adelanto .datos-a { padding: 0 26px 22px; }
+.adelanto .nombre-a { font-family: "Titular"; font-weight: 900; font-size: 36px; line-height: 1.05; letter-spacing: -.5px; }
+.adelanto .sku-a { font-weight: 600; font-size: 20px; color: #8A94A6; letter-spacing: 1px; margin-top: 6px; }
+.precio-tapado { position: relative; height: 110px; margin: 0 26px 26px; background: #EEF1F5; overflow: hidden; display: flex; align-items: center; padding-left: 22px; }
+.precio-tapado .falso { font-family: "Titular"; font-weight: 900; font-size: 64px; color: #C3CBD8; letter-spacing: -1px; }
+.precio-tapado .franja { position: absolute; left: -20px; right: -20px; top: 28px; height: 54px; background: var(--naranja); color: var(--blanco); transform: rotate(-4deg); display: flex; align-items: center; justify-content: center; font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 6px; }
+.sello-cyber { position: absolute; top: 18px; right: 18px; background: var(--naranja); color: var(--blanco); font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 4px; padding: 10px 18px; transform: rotate(4deg); }
+.historia h1 { line-height: .97; }
+.historia.blanca .adelanto { background: #EEF1F5; }
+.adelanto .nombre-a { font-size: 32px; text-wrap: balance; }
+.historia.blanca .adelanto { background: var(--blanco); border: 3px solid #DDE3EB; }
+.adelanto .nombre-a { font-size: 28px; white-space: nowrap; letter-spacing: -.8px; }
