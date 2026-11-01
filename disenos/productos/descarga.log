@@ -5,5 +5,7 @@
   https://femacba.com.ar 'hormigonera 400': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=hormigonera+400&per_page=50
   https://www.femacba.com.ar/?s=69510063: 177 links; SKU en la página: False
   https://www.femacba.com.ar/?s=hormigonera%20400: 177 links; SKU en la página: False
-  NO ENCONTRADO
-Sin foto: 69510063
+  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: True
+  listado: imgs cerca=['mods/html/fil/Model/Product/12629/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html']
+  producto https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/12629/69510063-1.jpg.webp
+  OK https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-400lt-eco-pro-s-motor-35261.html (femacba (html)) -> 69510063.webp [161 KB]
