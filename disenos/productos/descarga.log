@@ -4,5 +4,6 @@
   https://femacba.com.ar '69510063': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69510063&per_page=50
   https://femacba.com.ar 'hormigonera 400': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=hormigonera+400&per_page=50
   https://www.femacba.com.ar/?s=69510063: 177 links; SKU en la página: False
-  coincide https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes -> https://www.femacba.com.ar/fil/logo/logotienda.png
-  OK https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes (femacba (html)) -> 69510063.png [15 KB]
+  https://www.femacba.com.ar/?s=hormigonera%20400: 177 links; SKU en la página: False
+  NO ENCONTRADO
+Sin foto: 69510063
