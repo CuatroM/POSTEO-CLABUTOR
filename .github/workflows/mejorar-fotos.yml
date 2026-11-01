@@ -5,6 +5,7 @@ on:
     paths:
       - "disenos/fotos/*-original.*"
       - "disenos/mejorar_fotos.py"
+      - ".github/workflows/mejorar-fotos.yml"
   workflow_dispatch:
 
 permissions:
