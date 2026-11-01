@@ -1,0 +1,32 @@
+name: Mejorar calidad de fotos
+
+on:
+  push:
+    paths:
+      - "disenos/fotos/*-original.*"
+      - "disenos/mejorar_fotos.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mejorar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch
+      - run: pip install spandrel pillow numpy
+      - run: curl -sSL -o RealESRGAN_x4plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
+      - run: python disenos/mejorar_fotos.py RealESRGAN_x4plus.pth
+      - name: Guardar fotos mejoradas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898694+github-actions[bot]@users.noreply.github.com"
+          git add disenos/fotos
+          git diff --cached --quiet || git commit -m "Fotos mejoradas"
+          git pull --rebase -q
+          git push
