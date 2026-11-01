@@ -1,0 +1,6 @@
+# Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
+15108032TELEST | autoperforante tel alas
+104070008 | taco fischer sx 8
+KHE2445 | martillo combinado metabo
+GE3460 | generador gamma 2500
+69510063 | hormigonera 400
