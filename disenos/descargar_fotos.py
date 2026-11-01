@@ -73,6 +73,44 @@ def _og_image(html_txt):
     return m.group(1) if m else None
 
 
+def _abs(u):
+    if u.startswith("//"):
+        return "https:" + u
+    if u.startswith("/"):
+        return "https://www.femacba.com.ar" + u
+    return u
+
+
+def _desde_listado(sku, txt):
+    """En un listado que muestra el SKU, toma la foto y el link más cercanos al código."""
+    i = txt.find(sku)
+    ventana_antes, ventana_despues = txt[max(0, i - 4000):i], txt[i:i + 1500]
+    imgs = [m for m in re.findall(r'<img[^>]+(?:data-src|src)=["\']([^"\']+)', ventana_antes)
+            if "logo" not in m.lower() and not m.endswith(".svg")]
+    hrefs = [m for m in re.findall(r'href=["\']([^"\'#]+)', ventana_antes + ventana_despues)
+             if m.count("/") >= 2]
+    print(f"  listado: imgs cerca={imgs[-3:]} links cerca={hrefs[-4:]}")
+    # 1) página del producto (link más cercano antes del código)
+    for h in reversed(hrefs[:len(re.findall(r'href=', ventana_antes))]):
+        h = _abs(h)
+        if h in PAGINAS_HTML or "?" in h:
+            continue
+        try:
+            img = _og_image(_get(h))
+        except Exception:  # noqa: BLE001
+            continue
+        if img and "logo" not in img.lower():
+            print(f"  producto {h} -> {img}")
+            return "femacba (html)", {"name": h}, _abs(img)
+        break
+    # 2) la imagen del listado, en tamaño grande si la URL lo permite
+    if imgs:
+        img = _abs(imgs[-1])
+        print(f"  imagen del listado -> {img}")
+        return "femacba (listado)", {"name": sku}, img
+    return None
+
+
 def encontrar_html(sku, consulta):
     vistos = set()
     for plantilla in PAGINAS_HTML:
@@ -96,6 +134,10 @@ def encontrar_html(sku, consulta):
             clave = norm(consulta or sku)[:8]
             links.sort(key=lambda h: 0 if (clave and clave in norm(h)) or sku in h else 1)
             print(f"  {url}: {len(links)} links; SKU en la página: {sku in txt}")
+            if sku in txt:
+                hallado = _desde_listado(sku, txt)
+                if hallado:
+                    return hallado
             for h in links[:40]:
                 if h in vistos:
                     continue
@@ -104,8 +146,13 @@ def encontrar_html(sku, consulta):
                     pag = _get(h)
                 except Exception:  # noqa: BLE001
                     continue
-                if sku in pag:
+                if sku in pag and h not in PAGINAS_HTML:
                     img = _og_image(pag)
+                    if img and "logo" in img.lower():
+                        hallado = _desde_listado(sku, pag)
+                        if hallado:
+                            return hallado
+                        continue
                     print(f"  coincide {h} -> {img}")
                     if img:
                         return "femacba (html)", {"name": h}, img
