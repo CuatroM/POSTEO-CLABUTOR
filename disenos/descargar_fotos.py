@@ -112,13 +112,13 @@ def _desde_listado(sku, txt):
 
 
 def encontrar_html(sku, consulta):
-    vistos = set()
+    vistos, listados = set(), set()
     for plantilla in PAGINAS_HTML:
         for q in [sku] + ([consulta] if consulta else []):
             url = plantilla.format(q=requests.utils.quote(q))
-            if url in vistos:
+            if url in listados:
                 continue
-            vistos.add(url)
+            listados.add(url)
             try:
                 txt = _get(url)
             except Exception as ex:  # noqa: BLE001
