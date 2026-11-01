@@ -35,15 +35,15 @@ def placas(g):
 '''
 
     valores = "".join(
-        f'<div style="display:flex;align-items:center;gap:26px;padding:20px 0;border-bottom:2px solid #D6D6D6">'
-        f'<span style="width:16px;height:58px;background:#E10600;flex:none"></span>'
-        f'<span style="font-family:Titular;font-weight:900;font-size:68px;letter-spacing:-2px;text-transform:uppercase">{v}</span></div>'
+        f'<div style="display:flex;align-items:center;gap:24px;padding:14px 0;border-bottom:2px solid #D6D6D6">'
+        f'<span style="width:14px;height:46px;background:#E10600;flex:none"></span>'
+        f'<span style="font-family:Titular;font-weight:900;font-size:54px;letter-spacing:-1px;text-transform:uppercase">{v}</span></div>'
         for v in ["Integridad", "Solidez", "Compromiso", "Calidad"])
     p3 = f'''
 <div class="volanta">Nuestros valores</div>
 <h1 style="font-size:124px">Lo que<br><em>no cambió</em></h1>
 <p class="bajada" style="font-size:32px">Los mismos valores,<br><b>ahora también online.</b></p>
-<div style="margin-top:24px">{valores}</div>
+<div style="margin-top:18px">{valores}</div>
 <div style="position:absolute;left:80px;right:80px;bottom:140px;background:#111;color:#fff;padding:30px 36px">
   <div style="font-family:Titular;font-weight:900;font-size:42px;line-height:1.05;letter-spacing:-1px">Casi 70 años después,<br>seguimos atendiendo <span style="color:#E10600">como el primer día.</span></div>
 </div>
