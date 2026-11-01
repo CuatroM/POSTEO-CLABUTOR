@@ -24,3 +24,9 @@
       país.
 
 - Revisar siempre el render antes de publicar para confirmar que ningún renglón quede con una palabra suelta ni que nada se superponga.
+
+## Historias (1080×1920)
+- Se arman con `FORMATO = "historia"` en el archivo de `posteos/`; el marco está en `generar.py` y el estilo en `historia.css` (misma tipografía Inter).
+- Campaña CyberMonday: azul oscuro #0B1F3A + naranja #FF6A00, y cinta fija "CYBERMONDAY · 2·3·4 NOV" arriba en todas las piezas.
+- La cinta va debajo de la barra de perfil de Instagram y el pie (www.clabutor.com.ar abajo a la izquierda) por encima de la zona de respuesta, para que nada quede tapado.
+- Ofertas: una sola por placa, producto recortado, grande y sobre fondo liso; precio anterior tachado en gris y chico; precio cyber grande en naranja; debajo "12 cuotas" (clases `.precio-antes`, `.precio-cyber`, `.cuotas`).

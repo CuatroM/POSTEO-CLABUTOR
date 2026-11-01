@@ -101,6 +101,23 @@ def marco(cuerpo, n, total, rubro):
 </div></body></html>'''
 
 
+CINTAS = {"cyber": 'CYBERMONDAY <b>·</b> 2·3·4 NOV'}
+
+
+def marco_historia(cuerpo, n, total, fondo="azul", cinta="cyber"):
+    """Historia 1080x1920: cinta de campaña arriba, marca, cuerpo y web abajo a la izquierda."""
+    barras = "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
+    tira = f'<div class="cinta">{CINTAS[cinta]}</div>' if cinta else ""
+    return f'''<!doctype html><html><head><meta charset="utf-8"><meta name="tamano" content="1080x1920">
+<link rel="stylesheet" href="../../historia.css"></head>
+<body><div class="historia {fondo}">
+{tira}
+<div class="marca-h"><i></i>CLABUTOR</div>
+<div class="cuerpo" style="overflow:hidden">{cuerpo}</div>
+<div class="pie-h"><div class="web">www.clabutor.com.ar</div><div class="barras">{barras}</div></div>
+</div></body></html>'''
+
+
 def generar(modulo):
     spec = importlib.util.spec_from_file_location("posteo", modulo)
     post = importlib.util.module_from_spec(spec)
@@ -108,8 +125,14 @@ def generar(modulo):
     salida = AQUI / "salida" / post.ID
     salida.mkdir(parents=True, exist_ok=True)
     placas = post.placas(sys.modules[__name__])
+    historia = getattr(post, "FORMATO", "posteo") == "historia"
     for i, cuerpo in enumerate(placas, 1):
-        (salida / f"placa-{i}.html").write_text(marco(cuerpo, i, len(placas), post.RUBRO), encoding="utf-8")
+        if historia:  # cada placa es (fondo, html)
+            fondo, html_cuerpo = cuerpo
+            pagina = marco_historia(html_cuerpo, i, len(placas), fondo, getattr(post, "CINTA", "cyber"))
+        else:
+            pagina = marco(cuerpo, i, len(placas), post.RUBRO)
+        (salida / f"placa-{i}.html").write_text(pagina, encoding="utf-8")
     (salida / "texto.txt").write_text(post.TEXTO.strip() + "\n", encoding="utf-8")
     print(salida)
 

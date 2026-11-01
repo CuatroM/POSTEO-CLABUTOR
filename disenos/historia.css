@@ -1,0 +1,45 @@
+/* Historias Clabutor 1080x1920 — misma tipografía y estructura que los posteos.
+   Paleta de campaña Cyber: azul oscuro + naranja. */
+@import url("estilo.css");
+
+:root {
+  --azul: #0B1F3A;
+  --azul-medio: #16325C;
+  --naranja: #FF6A00;
+  --margen: 90px;
+}
+html, body { width: 1080px; height: 1920px; }
+.historia { position: relative; width: 1080px; height: 1920px; padding: 0 var(--margen); display: flex; flex-direction: column; overflow: hidden; }
+.historia.azul { background: var(--azul); color: var(--blanco); }
+.historia.blanca { background: var(--blanco); color: var(--azul); }
+
+/* Cinta fija de campaña (debajo de la barra de perfil de Instagram) */
+.cinta { position: absolute; left: 0; right: 0; top: 210px; height: 92px; background: var(--naranja); color: var(--blanco); display: flex; align-items: center; justify-content: center; gap: 26px; font-family: "Titular"; font-weight: 900; font-size: 40px; letter-spacing: 6px; }
+.cinta b { font-weight: 900; opacity: .55; }
+
+/* Marca chica debajo de la cinta */
+.marca-h { position: absolute; left: var(--margen); top: 350px; font-family: "Titular"; font-weight: 900; font-size: 34px; letter-spacing: 3px; display: flex; align-items: center; gap: 12px; }
+.marca-h i { width: 20px; height: 20px; background: var(--naranja); display: inline-block; }
+
+.cuerpo { position: absolute; left: var(--margen); right: var(--margen); top: 450px; bottom: 300px; display: flex; flex-direction: column; }
+
+.historia h1 { font-size: 132px; letter-spacing: -4px; margin-top: 0; }
+.historia h1 em { color: var(--naranja); }
+.historia .bajada { font-size: 46px; line-height: 1.25; margin-top: 34px; }
+.historia.azul .bajada { color: #C9D3E3; }
+.historia.azul .bajada b { color: var(--blanco); }
+.historia.blanca .bajada { color: #42526B; }
+.historia.blanca .bajada b { color: var(--azul); }
+
+/* Pie: web abajo a la izquierda (por encima de la zona de respuesta de Instagram) */
+.pie-h { position: absolute; left: var(--margen); right: var(--margen); bottom: 200px; height: 96px; display: flex; align-items: center; justify-content: space-between; border-top: 3px solid currentColor; }
+.pie-h .web { font-weight: 700; font-size: 32px; }
+.pie-h .barras span { width: 50px; height: 9px; background: rgba(128, 140, 160, .35); }
+.pie-h .barras span.activa { background: var(--naranja); }
+
+/* Oferta (para las historias de productos): una sola por placa */
+.oferta .foto-oferta { flex: 1; background: var(--blanco); display: flex; align-items: center; justify-content: center; }
+.oferta .foto-oferta img { max-width: 88%; max-height: 88%; object-fit: contain; }
+.precio-antes { font-weight: 600; font-size: 40px; color: #8A94A6; text-decoration: line-through; }
+.precio-cyber { font-family: "Titular"; font-weight: 900; font-size: 150px; line-height: .95; color: var(--naranja); letter-spacing: -4px; }
+.cuotas { font-family: "Titular"; font-weight: 700; font-size: 44px; margin-top: 10px; }
