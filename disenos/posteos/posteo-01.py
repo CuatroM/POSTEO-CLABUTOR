@@ -4,7 +4,7 @@ ID = "posteo-01-al-mundo-le-falta-un-tornillo"
 RUBRO = "Bulonería · Herramientas"
 
 TEXTO = """
-Desde un tornillo hasta una hormigonera: más de 10.000 productos para obra, taller, industria y hogar. Comprá en (WEB), escribinos al (WHATSAPP) o visitanos en (DIRECCIÓN). #bulonería #ferreteria #cordoba #herramientas #construccion
+Desde un tornillo hasta una hormigonera: más de 10.000 productos para obra, taller, industria y hogar. Comprá en clabutor.com.ar, escribinos al (WHATSAPP) o visitanos en (DIRECCIÓN). #bulonería #ferreteria #cordoba #herramientas #construccion
 """
 
 P2 = [
