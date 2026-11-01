@@ -50,6 +50,65 @@ def encontrar(sku, consulta):
                 print(f"  {sitio}: {elegido['name']} sin imagen")
                 continue
             return sitio, elegido, imgs[0]["src"]
+    return encontrar_html(sku, consulta)
+
+
+# Respaldo para tiendas sin API (femacba.com.ar corre en TiendaQuick):
+# busca en el HTML las páginas de producto y toma la que muestre el SKU.
+PAGINAS_HTML = [
+    "https://www.femacba.com.ar/?s={q}",
+    "https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes",
+]
+
+
+def _get(url):
+    r = requests.get(url, headers=UA, timeout=40)
+    r.raise_for_status()
+    return r.text
+
+
+def _og_image(html_txt):
+    m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html_txt)
+         or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', html_txt))
+    return m.group(1) if m else None
+
+
+def encontrar_html(sku, consulta):
+    vistos = set()
+    for plantilla in PAGINAS_HTML:
+        for q in [sku] + ([consulta] if consulta else []):
+            url = plantilla.format(q=requests.utils.quote(q))
+            if url in vistos:
+                continue
+            vistos.add(url)
+            try:
+                txt = _get(url)
+            except Exception as ex:  # noqa: BLE001
+                print(f"  {url}: error {ex}")
+                continue
+            links = []
+            for href in re.findall(r'href=["\']([^"\'#]+)', txt):
+                if href.startswith("/"):
+                    href = "https://www.femacba.com.ar" + href
+                if "femacba.com.ar" in href and href.count("/") >= 4 and href not in links:
+                    links.append(href)
+            # primero los links que mencionan el término
+            clave = norm(consulta or sku)[:8]
+            links.sort(key=lambda h: 0 if (clave and clave in norm(h)) or sku in h else 1)
+            print(f"  {url}: {len(links)} links; SKU en la página: {sku in txt}")
+            for h in links[:40]:
+                if h in vistos:
+                    continue
+                vistos.add(h)
+                try:
+                    pag = _get(h)
+                except Exception:  # noqa: BLE001
+                    continue
+                if sku in pag:
+                    img = _og_image(pag)
+                    print(f"  coincide {h} -> {img}")
+                    if img:
+                        return "femacba (html)", {"name": h}, img
     return None
 
 
