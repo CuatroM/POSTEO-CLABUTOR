@@ -131,14 +131,14 @@ def encontrar_html(sku, consulta):
                 if "femacba.com.ar" in href and href.count("/") >= 4 and href not in links:
                     links.append(href)
             # primero los links que mencionan el término
-            clave = norm(consulta or sku)[:8]
-            links.sort(key=lambda h: 0 if (clave and clave in norm(h)) or sku in h else 1)
+            palabras = [norm(w) for w in (consulta or "").split() if len(w) >= 4]
+            links.sort(key=lambda h: -(10 * (sku in h) + sum(w[:6] in norm(h) for w in palabras)))
             print(f"  {url}: {len(links)} links; SKU en la página: {sku in txt}")
             if sku in txt:
                 hallado = _desde_listado(sku, txt)
                 if hallado:
                     return hallado
-            for h in links[:40]:
+            for h in links[:120]:
                 if h in vistos:
                     continue
                 vistos.add(h)

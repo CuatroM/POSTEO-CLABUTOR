@@ -1,9 +1,4 @@
 # Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
 # Al guardar este archivo, GitHub descarga las fotos a esta carpeta (ver descarga.log).
-G1910KAR | amoladora angular kit 750w gamma
-GWS700KIT | amoladora bosch gws 700
-G3469ARA | soldadora inverter arc130 gamma
-601.IE.6200.7 | soldadora inverter 220a salkor
-69502706 | mesa plataforma elevadora hidraulica
-69370216 | compresor correa 3hp 180l
-69372106 | desmalezadora stiga
+69502706 | mesa elevadora hidraulica plataforma
+69370216 | compresor correa aire
