@@ -59,6 +59,11 @@ PAGINAS_HTML = [
     "https://www.femacba.com.ar/?s={q}",
     "https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes",
     "https://www.femacba.com.ar/compresores/compresores-1",
+    "https://www.femacba.com.ar/compresores",
+    "https://www.femacba.com.ar/motores/motores-a-explosion",
+    "https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas",
+    "https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego",
+    "https://www.femacba.com.ar/listado-productos.htm",
 ] + [f"https://www.femacba.com.ar/compresores/compresores-1?{k}={n}" for k in ("page", "pagina", "p") for n in range(2, 6)]
 
 
@@ -135,6 +140,19 @@ def encontrar_html(sku, consulta):
             palabras = [norm(w) for w in (consulta or "").split() if len(w) >= 4]
             links.sort(key=lambda h: -(10 * (sku in h) + sum(w[:6] in norm(h) for w in palabras)))
             print(f"  {url}: {len(links)} links; SKU en la página: {sku in txt}")
+            for pag_url in re.findall(r'href=["\']([^"\']*(?:[?&](?:page|pagina|pag|p)=\d+)[^"\']*)', txt)[:8]:
+                pag_url = _abs(pag_url.replace("&amp;", "&"))
+                if pag_url not in listados and pag_url.startswith("https://www.femacba.com.ar"):
+                    listados.add(pag_url)
+                    try:
+                        ptxt = _get(pag_url)
+                    except Exception:  # noqa: BLE001
+                        continue
+                    if sku in ptxt:
+                        print(f"  encontrado en {pag_url}")
+                        hallado = _desde_listado(sku, ptxt)
+                        if hallado:
+                            return hallado
             if sku in txt:
                 hallado = _desde_listado(sku, txt)
                 if hallado:
