@@ -10,6 +10,11 @@ TEXTO = ""
 
 NARANJA = "#FF6A00"
 
+# Placas 5 a 7: precio = costo informado por la sincronización (BaseLinker, grupo 65271,
+# INVENTARIO COMPLETO FEMA 2026 MATIAS) + 35 %, redondeado al peso.
+COSTO = {"69502706": 344318, "69370216": 723465.6, "69372106": 298014.08}
+MARGEN = 1.35
+
 # sku, nombre, antes (web), ahora, título comercial, envío gratis
 OFERTAS = [
     ("G1910KAR", "Amoladora angular en kit 750 W Gamma", 196119, 85500,
@@ -18,11 +23,11 @@ OFERTAS = [
      "Soldá como<br><em>un profesional</em>", False),
     ("601.IE.6200.7", "Soldadora inverter 220 A Salkor", 376490, 260000,
      "Más potencia<br><em>para soldar</em>", False),
-    ("69502706", "Mesa plataforma elevadora hidráulica 150 kg", None, None,
+    ("69502706", "Mesa plataforma elevadora hidráulica 150 kg", None, round(COSTO["69502706"] * MARGEN),
      "Levantá cargas<br><em>sin esfuerzo</em>", True),
-    ("69370216", "Compresor a correa 3 HP 180 L", None, None,
+    ("69370216", "Compresor a correa 3 HP 180 L", None, round(COSTO["69370216"] * MARGEN),
      "Aire de sobra<br><em>para tu taller</em>", True),
-    ("69372106", "Desmalezadora Stiga SB 520 D 52 cc", None, None,
+    ("69372106", "Desmalezadora Stiga SB 520 D 52 cc", None, round(COSTO["69372106"] * MARGEN),
      "Tu jardín,<br><em>impecable</em>", True),
 ]
 
