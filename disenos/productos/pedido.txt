@@ -1,2 +1,15 @@
 # Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
-69370216 | compresor correa
+69439916 | tablero herramientas
+69381380 | cargador bateria
+69370029 | compresor duca
+69510412 | alisadora allanadora
+69370211 | compresor
+69502230-1 | carretilla bandeja
+69367162 | motor briggs
+69500950 | escalera fiberglass
+57071804 | manguera riego
+69360062 | electrobomba centrifuga
+69501210 | andamio galvanizado
+69501232 | andamio piso
+69510058 | hormigonera
+69501490 | rampa acero
