@@ -36,5 +36,5 @@
 ## Contacto (WhatsApp)
 - Siempre los dos números, sin guiones y separados por espacios, con la dirección si hay lugar:
   - Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
-  - Sucursal: 354 344 1711 · Blvd. de los Alemanes 5310 - Córdoba
+  - Sucursal: 351 227 2420 · Blvd. de los Alemanes 5310 - Córdoba
 - En las placas, el producto tiene prioridad de tamaño sobre el bloque de contacto.

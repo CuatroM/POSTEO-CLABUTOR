@@ -9,7 +9,7 @@ Comprá tranquilo en Clabutor: hasta 12 cuotas con tarjeta o precio especial en 
 
 Comprá en clabutor.com.ar o escribinos por WhatsApp:
 Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
-Sucursal: 354 344 1711 · Blvd. de los Alemanes 5310 - Córdoba
+Sucursal: 351 227 2420 · Blvd. de los Alemanes 5310 - Córdoba
 
 #clabutor #cordoba #herramientas #ferreteria #fema
 """
@@ -131,7 +131,7 @@ def placas(g):
       </div>
       <div style="margin-top:14px;padding-top:14px;border-top:2px solid #E6E6E6">
         <div style="font-weight:700;font-size:18px;letter-spacing:2px;color:#777">SUCURSAL</div>
-        <div style="display:flex;align-items:center;gap:10px;margin-top:4px"><svg width="34" height="34" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M9 23l1.2-3.6A7.5 7.5 0 1 1 13 22Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg><span style="font-family:Titular;font-weight:900;font-size:36px;letter-spacing:-.5px;color:{ROJO}">354 344 1711</span></div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:4px"><svg width="34" height="34" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M9 23l1.2-3.6A7.5 7.5 0 1 1 13 22Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg><span style="font-family:Titular;font-weight:900;font-size:36px;letter-spacing:-.5px;color:{ROJO}">351 227 2420</span></div>
         <div style="font-weight:500;font-size:17px;color:#555;margin-top:2px;white-space:nowrap">Blvd. de los Alemanes 5310 - Córdoba</div>
       </div>
       <svg width="40" height="30" viewBox="0 0 40 30" style="position:absolute;left:0;bottom:-28px"><path d="M0 0h40L0 30Z" fill="#fff"/></svg>
