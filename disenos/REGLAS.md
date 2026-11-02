@@ -32,3 +32,8 @@
 - Campaña CyberMonday: azul oscuro #0B1F3A + naranja #FF6A00, y cinta fija "CYBERMONDAY · 2·3·4 NOV" arriba en todas las piezas.
 - La cinta va debajo de la barra de perfil de Instagram y el pie (www.clabutor.com.ar abajo a la izquierda) por encima de la zona de respuesta, para que nada quede tapado.
 - Ofertas: una sola por placa, producto recortado, grande y sobre fondo liso; precio anterior tachado en gris y chico; precio cyber grande en naranja; debajo "12 cuotas" (clases `.precio-antes`, `.precio-cyber`, `.cuotas`).
+
+## Contacto (WhatsApp)
+- Siempre los dos números, sin guiones y separados por espacios, con la dirección si hay lugar:
+  - Casa central: 351 227 2419 · Domingo F. Sarmiento 365
+  - Sucursal: 354 344 1711 · Blvd. de los Alemanes 5310
