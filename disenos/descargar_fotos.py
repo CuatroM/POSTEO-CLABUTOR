@@ -58,7 +58,8 @@ def encontrar(sku, consulta):
 PAGINAS_HTML = [
     "https://www.femacba.com.ar/?s={q}",
     "https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes",
-]
+    "https://www.femacba.com.ar/compresores/compresores-1",
+] + [f"https://www.femacba.com.ar/compresores/compresores-1?{k}={n}" for k in ("page", "pagina", "p") for n in range(2, 6)]
 
 
 def _get(url):

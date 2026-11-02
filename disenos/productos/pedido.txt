@@ -1,4 +1,2 @@
 # Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
-# Al guardar este archivo, GitHub descarga las fotos a esta carpeta (ver descarga.log).
-69502706 | mesa elevadora hidraulica plataforma
-69370216 | compresor correa aire
+69370216 | compresor correa
