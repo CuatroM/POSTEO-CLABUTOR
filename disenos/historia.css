@@ -68,3 +68,26 @@ html, body { width: 1080px; height: 1920px; }
 .adelanto .nombre-a { font-size: 32px; text-wrap: balance; }
 .historia.blanca .adelanto { background: var(--blanco); border: 3px solid #DDE3EB; }
 .adelanto .nombre-a { font-size: 28px; white-space: nowrap; letter-spacing: -.8px; }
+
+/* Historias de oferta con precio (una oferta por placa) */
+.pildora { display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; background: var(--naranja); color: var(--blanco); font-family: "Titular"; font-weight: 900; font-size: 28px; letter-spacing: 5px; padding: 12px 22px; }
+.pildora i { width: 12px; height: 12px; background: var(--blanco); border-radius: 50%; display: inline-block; }
+.panel-oferta { position: relative; background: var(--blanco); margin-top: 34px; height: 640px; display: flex; align-items: center; justify-content: center; overflow: visible; }
+.panel-oferta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 55%, #FFFFFF 0%, #EEF2F7 75%); }
+.panel-oferta img { position: relative; max-width: 86%; max-height: 86%; object-fit: contain; filter: drop-shadow(0 24px 22px rgba(11, 31, 58, .22)); }
+.descuento { position: absolute; top: -34px; right: -26px; width: 210px; height: 210px; border-radius: 50%; background: var(--naranja); color: var(--blanco); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(-10deg); box-shadow: 0 10px 0 rgba(0, 0, 0, .18); z-index: 2; }
+.descuento b { font-family: "Titular"; font-weight: 900; font-size: 74px; line-height: .9; letter-spacing: -3px; }
+.descuento span { font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 4px; }
+.envio-gratis { position: absolute; left: -14px; bottom: 26px; background: var(--naranja); color: var(--blanco); font-family: "Titular"; font-weight: 900; font-size: 30px; letter-spacing: 3px; padding: 14px 24px; z-index: 2; display: flex; align-items: center; gap: 14px; }
+.ficha { margin-top: 30px; }
+.ficha .nombre-o { font-family: "Titular"; font-weight: 700; font-size: 38px; line-height: 1.08; letter-spacing: -.5px; }
+.ficha .sku-o { font-weight: 600; font-size: 22px; letter-spacing: 2px; color: #8FA3C2; margin-top: 8px; }
+.precios { display: flex; align-items: flex-end; gap: 28px; margin-top: 18px; }
+.precios .precio-antes { margin-bottom: 18px; }
+.panel-oferta { height: 540px; margin-top: 30px; }
+.descuento { top: 18px; right: 18px; width: 190px; height: 190px; }
+.descuento b { font-size: 66px; }
+.historia h1 .linea { white-space: nowrap; }
+.precio-cyber { font-size: 140px; }
+.ficha { margin-top: 26px; }
+.panel-oferta img { width: 86%; height: 86%; }
