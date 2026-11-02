@@ -50,7 +50,52 @@ def encontrar(sku, consulta):
                 print(f"  {sitio}: {elegido['name']} sin imagen")
                 continue
             return sitio, elegido, imgs[0]["src"]
-    return encontrar_html(sku, consulta)
+    return encontrar_html(sku, consulta) or encontrar_drive(sku)
+
+
+# Último recurso: la carpeta pública de fotos FEMA en Google Drive (la misma que usa la
+# publicación en Mercado Libre). Las fotos se llaman <SKU>.jpg (o <SKU>-1.jpg, etc.).
+DRIVE_FOTOS = "1n-pnG6JIS5q1TBEWn3jS0BYY9I36xlra"
+_DRIVE = None
+
+
+def _drive_listar(fid, profundidad=4):
+    import html as _h
+    r = requests.get(f"https://drive.google.com/embeddedfolderview?id={fid}", headers=UA, timeout=60)
+    r.raise_for_status()
+    out = []
+    for m in re.finditer(r'<div class="flip-entry" id="entry-([A-Za-z0-9_-]+)".*?'
+                         r'<div class="flip-entry-title">(.*?)</div>', r.text, re.S):
+        eid, nombre = m.group(1), _h.unescape(m.group(2)).strip()
+        bloque = r.text[m.start():m.end() + 400]
+        if "/folders/" in bloque or "drive/folders" in bloque:
+            if profundidad > 0:
+                out += _drive_listar(eid, profundidad - 1)
+        else:
+            out.append((nombre, eid))
+    return out
+
+
+def encontrar_drive(sku):
+    global _DRIVE
+    if _DRIVE is None:
+        try:
+            _DRIVE = _drive_listar(DRIVE_FOTOS)
+            print(f"  Drive: {len(_DRIVE)} archivos en la carpeta de fotos")
+        except Exception as ex:  # noqa: BLE001
+            print(f"  Drive: error al listar ({ex})")
+            _DRIVE = []
+    base = sku.split("-")[0]
+    candidatos = sorted(n for n in _DRIVE if re.match(re.escape(sku) + r"([ ._-]|$)", n[0], re.I)) or \
+        sorted(n for n in _DRIVE if re.match(re.escape(base) + r"([ ._-]|$)", n[0], re.I))
+    candidatos = [c for c in candidatos if c[0].lower().endswith((".jpg", ".jpeg", ".png", ".webp"))]
+    if not candidatos:
+        print(f"  Drive: no hay foto para {sku}")
+        return None
+    nombre, fid = candidatos[0]
+    print(f"  Drive: {nombre}")
+    ext = Path(nombre).suffix.lower()
+    return "drive", {"name": nombre}, f"https://drive.usercontent.google.com/download?id={fid}&export=download#{ext}"
 
 
 # Respaldo para tiendas sin API (femacba.com.ar corre en TiendaQuick):
@@ -212,9 +257,9 @@ def main():
             print("  NO ENCONTRADO")
             continue
         sitio, prod, url = hallado
-        ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
+        ext = (url.split("#")[1] if "#" in url else Path(url.split("?")[0]).suffix.lower()) or ".jpg"
         destino = PRODUCTOS / f"{sku}{ext}"
-        img = requests.get(url, headers=UA, timeout=60)
+        img = requests.get(url.split("#")[0], headers=UA, timeout=120)
         img.raise_for_status()
         for viejo in PRODUCTOS.glob(f"{sku}.*"):
             viejo.unlink()
