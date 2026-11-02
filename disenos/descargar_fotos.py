@@ -195,6 +195,12 @@ def main():
             viejo.unlink()
         destino.write_bytes(img.content)
         print(f"  OK {prod['name']} ({sitio}) -> {destino.name} [{len(img.content)//1024} KB]")
+        pr = prod.get("prices") or {}
+        if pr:
+            div = 10 ** int(pr.get("currency_minor_unit", 0) or 0)
+            val = lambda k: (int(pr[k]) / div) if pr.get(k) else None  # noqa: E731
+            print(f"  PRECIOS {sku}: precio={val('price')} lista={val('regular_price')} oferta={val('sale_price')} "
+                  f"link={prod.get('permalink', '')}")
     if faltan:
         print("Sin foto:", ", ".join(faltan))
     (PRODUCTOS / "descarga.log").write_text("\n".join(LOG) + "\n", encoding="utf-8")
