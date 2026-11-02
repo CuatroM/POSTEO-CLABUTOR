@@ -1,40 +1,19 @@
-G1910KAR:
-  OK Amoladora Angular en Kit 750w Gamma (https://clabutor.com.ar) -> G1910KAR.jpg [45 KB]
-  PRECIOS G1910KAR: precio=196119.0 lista=196119.0 oferta=196119.0 link=https://clabutor.com.ar/producto/amoladora-angular-en-kit-750w-gamma/
-GWS700KIT:
-  OK Amoladora Angular Bosch GWS 700 + Kit 5 Discos (https://clabutor.com.ar) -> GWS700KIT.png [205 KB]
-  PRECIOS GWS700KIT: precio=152769.0 lista=152769.0 oferta=152769.0 link=https://clabutor.com.ar/producto/amoladora-angular-bosch-gws-700-kit-5-discos/
-G3469ARA:
-  OK Soldadora Inverter ARC130 Gamma (https://clabutor.com.ar) -> G3469ARA.jpg [42 KB]
-  PRECIOS G3469ARA: precio=418194.0 lista=418194.0 oferta=418194.0 link=https://clabutor.com.ar/producto/soldadora-inverter-arc130-gamma-220v-proteccion-termica/
-601.IE.6200.7:
-  OK Soldadora Inverter 220A Salkor (https://clabutor.com.ar) -> 601.IE.6200.7.jpg [49 KB]
-  PRECIOS 601.IE.6200.7: precio=376490.0 lista=376490.0 oferta=376490.0 link=https://clabutor.com.ar/producto/soldadora-inverter-220a-salkor/
 69502706:
   https://clabutor.com.ar '69502706': 0 resultados, ninguno con SKU 69502706 ()
-  https://clabutor.com.ar 'mesa plataforma elevadora hidraulica': 0 resultados, ninguno con SKU 69502706 ()
+  https://clabutor.com.ar 'mesa elevadora hidraulica plataforma': 0 resultados, ninguno con SKU 69502706 ()
   https://femacba.com.ar '69502706': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69502706&per_page=50
-  https://femacba.com.ar 'mesa plataforma elevadora hidraulica': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=mesa+plataforma+elevadora+hidraulica&per_page=50
+  https://femacba.com.ar 'mesa elevadora hidraulica plataforma': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=mesa+elevadora+hidraulica+plataforma&per_page=50
   https://www.femacba.com.ar/?s=69502706: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=mesa%20plataforma%20elevadora%20hidraulica: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  NO ENCONTRADO
+  listado: imgs cerca=['mods/html/fil/Model/Product/995/thumb_03_69502716-1.png.webp', 'mods/html/fil/Model/Product/993/thumb_03_'] links cerca=['https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html', 'https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html', 'https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html', 'https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html']
+  producto https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/993/69502706-1.jpg.webp
+  OK https://www.femacba.com.ar/movimiento-de-carga/mesas-elevadoras/plataforma-hidra-150-kg-altura-740-mmspa150.html (femacba (html)) -> 69502706.webp [26 KB]
 69370216:
   https://clabutor.com.ar '69370216': 0 resultados, ninguno con SKU 69370216 ()
-  https://clabutor.com.ar 'compresor correa 3hp 180l': 0 resultados, ninguno con SKU 69370216 ()
+  https://clabutor.com.ar 'compresor correa aire': 0 resultados, ninguno con SKU 69370216 ()
   https://femacba.com.ar '69370216': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69370216&per_page=50
-  https://femacba.com.ar 'compresor correa 3hp 180l': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor+correa+3hp+180l&per_page=50
+  https://femacba.com.ar 'compresor correa aire': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor+correa+aire&per_page=50
   https://www.femacba.com.ar/?s=69370216: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=compresor%20correa%203hp%20180l: 177 links; SKU en la página: False
+  https://www.femacba.com.ar/?s=compresor%20correa%20aire: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   NO ENCONTRADO
-69372106:
-  https://clabutor.com.ar '69372106': 0 resultados, ninguno con SKU 69372106 ()
-  https://clabutor.com.ar 'desmalezadora stiga': 0 resultados, ninguno con SKU 69372106 ()
-  https://femacba.com.ar '69372106': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69372106&per_page=50
-  https://femacba.com.ar 'desmalezadora stiga': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=desmalezadora+stiga&per_page=50
-  https://www.femacba.com.ar/?s=69372106: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/20141/thumb_03_69372404.jpg.webp', 'mods/html/fil/Model/Product/20141/thumb_03_69372404-1.jpg.webp', 'mods/html/fil/Model/Product/731/thumb_03_'] links cerca=['https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html', 'https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html', 'https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html', 'https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html']
-  producto https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/731/69372106-1.jpg.webp
-  OK https://www.femacba.com.ar/jardineria/desmalezadoras/desmalezadora-stiga-sb-520-d-52cc-2-tiempos-21hp.html (femacba (html)) -> 69372106.webp [78 KB]
-Sin foto: 69502706, 69370216
+Sin foto: 69370216
