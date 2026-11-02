@@ -33,6 +33,9 @@
 - La cinta va debajo de la barra de perfil de Instagram y el pie (www.clabutor.com.ar abajo a la izquierda) por encima de la zona de respuesta, para que nada quede tapado.
 - Ofertas: una sola por placa, producto recortado, grande y sobre fondo liso; precio anterior tachado en gris y chico; precio cyber grande en naranja; debajo "12 cuotas" (clases `.precio-antes`, `.precio-cyber`, `.cuotas`).
 
+- Historias de **producto**: sin la fila de barras de progreso (se pueden publicar en cualquier orden).
+  Historias **informativas**: con barras, contando solo las informativas del set.
+
 ## Contacto (WhatsApp)
 - Siempre los dos números, sin guiones y separados por espacios, con la dirección si hay lugar:
   - Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba

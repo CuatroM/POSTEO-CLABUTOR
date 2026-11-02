@@ -108,7 +108,9 @@ def tarjeta(p, estilo=""):
 
 
 def marco(cuerpo, n, total, rubro, fondo=""):
-    barras = "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
+    # Historias de producto (marcadas con MARCA_PRODUCTO) van sin barras de progreso:
+    # se pueden publicar en cualquier orden. Las informativas sí las llevan.
+    barras = "" if not n else "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
     return f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../estilo.css"></head>
 <body><div class="placa {fondo}">
 <div class="encabezado"><div class="marca"><i></i>CLABUTOR</div><div class="rubro">{e(rubro)}</div></div>
@@ -117,12 +119,15 @@ def marco(cuerpo, n, total, rubro, fondo=""):
 </div></body></html>'''
 
 
+MARCA_PRODUCTO = "<!--producto-->"
 CINTAS = {"cyber": 'CYBERMONDAY <b>·</b> 2·3·4 NOV'}
 
 
 def marco_historia(cuerpo, n, total, fondo="azul", cinta="cyber"):
     """Historia 1080x1920: cinta de campaña arriba, marca, cuerpo y web abajo a la izquierda."""
-    barras = "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
+    # Historias de producto (marcadas con MARCA_PRODUCTO) van sin barras de progreso:
+    # se pueden publicar en cualquier orden. Las informativas sí las llevan.
+    barras = "" if not n else "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
     tira = f'<div class="cinta">{CINTAS[cinta]}</div>' if cinta else ""
     return f'''<!doctype html><html><head><meta charset="utf-8"><meta name="tamano" content="1080x1920">
 <link rel="stylesheet" href="../../historia.css"></head>
@@ -142,10 +147,17 @@ def generar(modulo):
     salida.mkdir(parents=True, exist_ok=True)
     placas = post.placas(sys.modules[__name__])
     historia = getattr(post, "FORMATO", "posteo") == "historia"
+    informativas = [c for c in placas if historia and MARCA_PRODUCTO not in c[1]]
+    k = 0
     for i, cuerpo in enumerate(placas, 1):
         if historia:  # cada placa es (fondo, html)
             fondo, html_cuerpo = cuerpo
-            pagina = marco_historia(html_cuerpo, i, len(placas), fondo, getattr(post, "CINTA", "cyber"))
+            if MARCA_PRODUCTO in html_cuerpo:
+                n = 0
+            else:
+                k += 1
+                n = k
+            pagina = marco_historia(html_cuerpo, n, len(informativas), fondo, getattr(post, "CINTA", "cyber"))
         else:
             fondo, cuerpo = cuerpo if isinstance(cuerpo, tuple) else ("", cuerpo)
             pagina = marco(cuerpo, i, len(placas), post.RUBRO, fondo)

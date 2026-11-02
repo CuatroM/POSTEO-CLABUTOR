@@ -48,7 +48,7 @@ def placa_oferta(g, sku, nombre, antes, ahora, titulo, envio):
               '<circle cx="22" cy="56" r="9" fill="#fff"/><circle cx="76" cy="56" r="9" fill="#fff"/></svg>ENVÍO GRATIS A TODO EL PAÍS</div>') if envio else ""
     tachado = f'<div class="precio-antes">{pesos(antes)}</div>' if antes else ""
     precio = pesos(ahora) if ahora else "$ —"
-    return f'''
+    return "<!--producto-->" + f'''
 <div class="pildora"><i></i>OFERTA CYBER</div>
 <h1 style="font-size:92px;margin-top:24px;white-space:nowrap">{titulo}</h1>
 <div class="panel-oferta">{badge}{foto}{gratis}</div>
