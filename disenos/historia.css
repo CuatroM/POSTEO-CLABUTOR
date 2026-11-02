@@ -94,3 +94,5 @@ html, body { width: 1080px; height: 1920px; }
 /* Barras de progreso: entran aunque haya muchas historias */
 .pie-h .barras { width: 460px; justify-content: flex-end; gap: 6px; }
 .pie-h .barras span { width: auto; flex: 0 1 50px; min-width: 12px; }
+/* Regla: las historias claras van siempre con fondo blanco (sin grises) */
+.historia.gris { background: var(--blanco); }

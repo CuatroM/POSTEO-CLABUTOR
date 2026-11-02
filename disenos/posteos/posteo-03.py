@@ -77,14 +77,14 @@ def placas(g):
 <div class="volanta">Razón 01</div>
 <h1 style="font-size:104px">Pagá como<br>te quede <em>mejor</em></h1>
 <p class="bajada" style="font-size:32px">Hasta <b>12 cuotas con tarjeta,</b><br>o <b>precio especial</b> en efectivo o transferencia.</p>
-<div style="position:relative;background:#fff;margin-top:34px;height:540px;display:flex;flex-direction:column">
+<div style="position:relative;background:#fff;margin-top:34px;height:540px;display:flex;flex-direction:column;border-top:2px solid #111">
   <div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center">{foto}</div>
   <div style="position:absolute;top:-26px;right:-20px;width:260px;height:260px;border-radius:50%;background:{ROJO};color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-8deg);box-shadow:0 10px 0 rgba(0,0,0,.12)">
     <span style="font-family:Titular;font-weight:900;font-size:26px;letter-spacing:4px">PRECIO</span>
     <b style="font-family:Titular;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1;margin-top:4px">$85.500</b>
     <span style="font-family:Titular;font-weight:700;font-size:19px;letter-spacing:1px;margin-top:6px;text-align:center;line-height:1.1">EFECTIVO O<br>TRANSFERENCIA</span>
   </div>
-  <div style="padding:0 26px 22px">
+  <div style="padding:0 0 22px">
     <div style="font-family:Titular;font-weight:700;font-size:28px">Amoladora angular en kit 750 W Gamma</div>
     <div style="font-weight:600;font-size:18px;color:#8A8A8A;letter-spacing:1px;margin-top:4px">COD. G1910KAR</div>
   </div>
@@ -132,4 +132,4 @@ def placas(g):
   </div>
 </div>
 '''
-    return [("oscura", p1), ("gris", p2), ("", p3), ("oscura", p4)]
+    return [("oscura", p1), ("", p2), ("", p3), ("oscura", p4)]

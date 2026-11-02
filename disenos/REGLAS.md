@@ -9,6 +9,8 @@
 - Pie: **www.clabutor.com.ar abajo a la izquierda** (no poner @clabutor.cba). Progreso de placas a la derecha.
 - Fotos de producto en `productos/<SKU>.jpg`, recortadas al producto (sin margen blanco). Se descargan solas listando los SKU en `productos/pedido.txt`.
 
+- Placas claras: **fondo blanco siempre**, nunca grises (vale para posteos e historias). Los fondos oscuros siguen igual.
+
 ## Redacción
 - No repetir el mismo tema en una placa: si la volanta dice "Todo el país", la bajada no repite "envíos a todo el país" (usar otra cosa, p. ej. "Retiro en sucursal o entrega a domicilio").
 - No repetir el link de la web dentro de la placa, porque ya está en el pie. Solo va en el cuerpo si es el título principal o una referencia tipo "Visitá nuestra web" / "Mirá lo que tenemos para vos en la web".
