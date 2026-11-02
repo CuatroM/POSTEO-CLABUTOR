@@ -1,4 +1,2 @@
-# Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece; "SKU | drive" busca directo en Drive.
-69370029 | drive
-69370211 | drive
+# Un SKU por línea. "SKU | drive" busca directo en Drive.
 69367162 | drive

@@ -93,6 +93,9 @@ def encontrar_drive(sku):
     candidatos = [c for c in candidatos if c[0].lower().endswith((".jpg", ".jpeg", ".png", ".webp"))]
     if not candidatos:
         print(f"  Drive: no hay foto para {sku}")
+        parecidos = [n for n, _ in _DRIVE if n[:6] == base[:6]][:15]
+        if parecidos:
+            print(f"  Drive: nombres parecidos: {', '.join(parecidos)}")
         return None
     nombre, fid = candidatos[0]
     print(f"  Drive: {nombre}")
