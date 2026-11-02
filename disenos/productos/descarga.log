@@ -1,100 +1,106 @@
-69439916:
-  https://clabutor.com.ar: TABLERO HERRAMIENTAS 558X458MM 34PZ sin imagen
-  https://clabutor.com.ar: TABLERO HERRAMIENTAS 558X458MM 34PZ sin imagen
-  https://femacba.com.ar '69439916': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69439916&per_page=50
-  https://femacba.com.ar 'tablero herramientas': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=tablero+herramientas&per_page=50
-  https://www.femacba.com.ar/?s=69439916: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/18795/thumb_03_694399242709-1.jpg.webp', 'mods/html/fil/Model/Product/18795/thumb_03_69439924-16661-2.jpg.webp', 'mods/html/fil/Model/Product/902/thumb_03_'] links cerca=['https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html', 'https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html', 'https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html', 'https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html']
-  producto https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/902/69439916-1.jpg.webp
-  OK https://www.femacba.com.ar/herramientas-manuales/tableros-de-herramientas/tablero-herramientas-34-pz-6-558-x-458mm.html (femacba (html)) -> 69439916.webp [364 KB]
-69381380:
-  https://clabutor.com.ar '69381380': 0 resultados, ninguno con SKU 69381380 ()
-  https://clabutor.com.ar 'cargador bateria': 0 resultados, ninguno con SKU 69381380 ()
-  https://femacba.com.ar '69381380': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69381380&per_page=50
-  https://femacba.com.ar 'cargador bateria': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=cargador+bateria&per_page=50
-  https://www.femacba.com.ar/?s=69381380: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/796/thumb_03_'] links cerca=['https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html', 'https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html', 'https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html', 'https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html']
-  producto https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/796/69381380-1.jpg.webp
-  OK https://www.femacba.com.ar/automotriz/cargador-arrancador/cargador-bateria-duca-12-8-amp-20-amp.html (femacba (html)) -> 69381380.webp [172 KB]
 69370029:
   https://clabutor.com.ar '69370029': 0 resultados, ninguno con SKU 69370029 ()
-  https://clabutor.com.ar 'compresor duca': 0 resultados, ninguno con SKU 69370029 ()
+  https://clabutor.com.ar 'compresor duca pro': 0 resultados, ninguno con SKU 69370029 ()
   https://femacba.com.ar '69370029': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69370029&per_page=50
-  https://femacba.com.ar 'compresor duca': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor+duca&per_page=50
+  https://femacba.com.ar 'compresor duca pro': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor+duca+pro&per_page=50
   https://www.femacba.com.ar/?s=69370029: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=compresor%20duca: 177 links; SKU en la página: False
+  https://www.femacba.com.ar/?s=compresor%20duca%20pro: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=2: 191 links; SKU en la página: True
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?page=2
   listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
-  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/index.php', 'https://www.femacba.com.ar/compresores', 'https://www.femacba.com.ar/compresores/compresores-1']
-  https://www.femacba.com.ar/compresores/compresores-1?page=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=5: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores?page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
+  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
+  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
+  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=2&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=3&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=4&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=5&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=2&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=3&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=4&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=5&page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-duca-pro-3-hp-x-180-lt220-v-23820.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-a-correa-120-litros-3-hp-220v-tanque-vertical.html']
   NO ENCONTRADO
-69510412:
-  https://clabutor.com.ar '69510412': 0 resultados, ninguno con SKU 69510412 ()
-  https://clabutor.com.ar 'alisadora allanadora': 0 resultados, ninguno con SKU 69510412 ()
-  https://femacba.com.ar '69510412': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69510412&per_page=50
-  https://femacba.com.ar 'alisadora allanadora': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=alisadora+allanadora&per_page=50
-  https://www.femacba.com.ar/?s=69510412: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/1617/thumb_03_69510410-1.jpg.webp', 'mods/html/fil/Model/Product/1051/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html', 'https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html', 'https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html', 'https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html']
-  producto https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/1051/69510412-1.jpg.webp
-  OK https://www.femacba.com.ar/construccion/alisadoras-discos-de-alisadoras/alisadora-fema-motor-fema-168-7hp-900-mm.html (femacba (html)) -> 69510412.webp [110 KB]
 69370211:
   https://clabutor.com.ar '69370211': 0 resultados, ninguno con SKU 69370211 ()
-  https://clabutor.com.ar 'compresor': 6 resultados, ninguno con SKU 69370211 (69370213 COMPRESOR A CORREA 3HP 220V X 120LTS, K25 Compresor 25L 2HP Kushiro, F070 RESORTE COMPRESOR 3.00X23.00XL115XP11.00X12 1/2, F090 RESORTE COMPRESOR 1.50X12.00XL155XP3.10XV51 1/2, F057 RESORTE COMPRESOR 0.50X5.70XL28XP2.20XV16 1/2)
+  https://clabutor.com.ar 'compresor fema': 0 resultados, ninguno con SKU 69370211 ()
   https://femacba.com.ar '69370211': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69370211&per_page=50
-  https://femacba.com.ar 'compresor': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor&per_page=50
+  https://femacba.com.ar 'compresor fema': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=compresor+fema&per_page=50
   https://www.femacba.com.ar/?s=69370211: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=compresor: 177 links; SKU en la página: False
+  https://www.femacba.com.ar/?s=compresor%20fema: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=3: 191 links; SKU en la página: True
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?page=3
   listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
-  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/index.php', 'https://www.femacba.com.ar/compresores', 'https://www.femacba.com.ar/compresores/compresores-1']
-  https://www.femacba.com.ar/compresores/compresores-1?page=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=5: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores?page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
+  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
+  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
+  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=2&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=3&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=4&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?pagina=5&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=2&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=3&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=4&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/compresores/compresores-1?p=5&page=3
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/compresor-fema-25hp-x-120-lt220-vc-ruedas.html', 'https://www.femacba.com.ar/compresores/compresores-1/motocompresor-3-hp-cartseco-1cilindro-220v.html']
   NO ENCONTRADO
-69502230-1:
-  https://clabutor.com.ar '69502230-1': 0 resultados, ninguno con SKU 69502230-1 ()
-  https://clabutor.com.ar 'carretilla bandeja': 0 resultados, ninguno con SKU 69502230-1 ()
-  https://femacba.com.ar '69502230-1': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69502230-1&per_page=50
-  https://femacba.com.ar 'carretilla bandeja': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=carretilla+bandeja&per_page=50
-  https://www.femacba.com.ar/?s=69502230-1: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/19587/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html', 'https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html', 'https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html', 'https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html']
-  producto https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/19587/69502230-1.jpg.webp
-  OK https://www.femacba.com.ar/construccion/carretillas/carretilla-bandeja-fema-rueda-doble-maciza-92-lt-200-kg-5.html (femacba (html)) -> 69502230-1.webp [122 KB]
 69367162:
   https://clabutor.com.ar '69367162': 0 resultados, ninguno con SKU 69367162 ()
-  https://clabutor.com.ar 'motor briggs': 0 resultados, ninguno con SKU 69367162 ()
+  https://clabutor.com.ar 'motor briggs stratton': 0 resultados, ninguno con SKU 69367162 ()
   https://femacba.com.ar '69367162': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69367162&per_page=50
-  https://femacba.com.ar 'motor briggs': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=motor+briggs&per_page=50
+  https://femacba.com.ar 'motor briggs stratton': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=motor+briggs+stratton&per_page=50
   https://www.femacba.com.ar/?s=69367162: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=motor%20briggs: 177 links; SKU en la página: False
+  https://www.femacba.com.ar/?s=motor%20briggs%20stratton: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=5: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
+  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/motores/motores-a-explosion?page=2
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-fema-168-65hp-eje-cilinc-reductor-a-cadena.html']
+  listado: imgs cerca=[] links cerca=['https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-bs-875-hp-eje-v-7-8x1812-ohv-pofesional.html', 'https://www.femacba.com.ar/motores/motores-a-explosion/motor-fema-168-65hp-eje-cilinc-reductor-a-cadena.html']
+  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
+  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
+  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
@@ -104,37 +110,23 @@
   https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
   NO ENCONTRADO
-69500950:
-  https://clabutor.com.ar '69500950': 0 resultados, ninguno con SKU 69500950 ()
-  https://clabutor.com.ar 'escalera fiberglass': 0 resultados, ninguno con SKU 69500950 ()
-  https://femacba.com.ar '69500950': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69500950&per_page=50
-  https://femacba.com.ar 'escalera fiberglass': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=escalera+fiberglass&per_page=50
-  https://www.femacba.com.ar/?s=69500950: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/973/thumb_03_'] links cerca=['https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html', 'https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html', 'https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html', 'https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html']
-  producto https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/973/69500950-1.png.webp
-  OK https://www.femacba.com.ar/escaleras/de-fibra-de-vidrio-dielectricas/escalera-fiberglass-doble-lado-12-peldanos-366-cm.html (femacba (html)) -> 69500950.webp [13 KB]
 57071804:
   https://clabutor.com.ar '57071804': 0 resultados, ninguno con SKU 57071804 ()
-  https://clabutor.com.ar 'manguera riego': 0 resultados, ninguno con SKU 57071804 ()
+  https://clabutor.com.ar 'cano riego': 0 resultados, ninguno con SKU 57071804 ()
   https://femacba.com.ar '57071804': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=57071804&per_page=50
-  https://femacba.com.ar 'manguera riego': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=manguera+riego&per_page=50
+  https://femacba.com.ar 'cano riego': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=cano+riego&per_page=50
   https://www.femacba.com.ar/?s=57071804: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=manguera%20riego: 177 links; SKU en la página: False
+  https://www.femacba.com.ar/?s=cano%20riego: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  NO ENCONTRADO
+  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
+  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
+  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
+  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego?page=5
+  listado: imgs cerca=['mods/html/fil/Model/Product/14874/thumb_03_can-riego-oferta-y-riego-verde-1.jpg.webp'] links cerca=['https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-oferta-13-x-25-mts.html', 'https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-oferta-13-x-25-mts.html', 'https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-oferta-13-x-25-mts.html', 'https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-reforzada-1-2*-15-mt-28011.html']
+  producto https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-oferta-13-x-25-mts.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/14874/can-riego-oferta-y-riego-verde-1.jpg.webp
+  OK https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego/caÑo-riego-oferta-13-x-25-mts.html (femacba (html)) -> 57071804.webp [33 KB]
 69360062:
   https://clabutor.com.ar '69360062': 0 resultados, ninguno con SKU 69360062 ()
   https://clabutor.com.ar 'electrobomba centrifuga': 0 resultados, ninguno con SKU 69360062 ()
@@ -144,55 +136,11 @@
   https://www.femacba.com.ar/?s=electrobomba%20centrifuga: 177 links; SKU en la página: False
   https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
   https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?page=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  NO ENCONTRADO
-69501210:
-  https://clabutor.com.ar '69501210': 0 resultados, ninguno con SKU 69501210 ()
-  https://clabutor.com.ar 'andamio galvanizado': 0 resultados, ninguno con SKU 69501210 ()
-  https://femacba.com.ar '69501210': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69501210&per_page=50
-  https://femacba.com.ar 'andamio galvanizado': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=andamio+galvanizado&per_page=50
-  https://www.femacba.com.ar/?s=69501210: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/15577/thumb_03_69501132-1.jpg.webp', 'mods/html/fil/Model/Product/15577/thumb_03_69501132-1-2.jpg.webp', 'mods/html/fil/Model/Product/8839/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/andamio-1219x1700-galvanizado-comp2cuerpos-2caño-lateral.html', 'https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/andamio-1219x1700-galvanizado-comp2cuerpos-2caño-lateral.html', 'https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/andamio-1219x1700-galvanizado-comp2cuerpos-2caño-lateral.html', 'https://www.fem']
-  producto https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/andamio-1219x1700-galvanizado-comp2cuerpos-2caño-lateral.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/8839/69501210-1.jpg.webp
-  OK https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/andamio-1219x1700-galvanizado-comp2cuerpos-2caño-lateral.html (femacba (html)) -> 69501210.webp [30 KB]
-69501232:
-  https://clabutor.com.ar '69501232': 0 resultados, ninguno con SKU 69501232 ()
-  https://clabutor.com.ar 'andamio piso': 0 resultados, ninguno con SKU 69501232 ()
-  https://femacba.com.ar '69501232': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69501232&per_page=50
-  https://femacba.com.ar 'andamio piso': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=andamio+piso&per_page=50
-  https://www.femacba.com.ar/?s=69501232: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/8839/thumb_03_69501210-1.jpg.webp', 'mods/html/fil/Model/Product/8839/thumb_03_69501210-1-2.jpg.webp', 'mods/html/fil/Model/Product/8840/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html', 'https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html', 'https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html', 'https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html']
-  producto https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/8840/69501232-1.jpg.webp
-  OK https://www.femacba.com.ar/construccion/andamio-plataformas-puntales/piso-420x45x12x1829mm-galvanizado.html (femacba (html)) -> 69501232.webp [17 KB]
-69510058:
-  https://clabutor.com.ar '69510058': 0 resultados, ninguno con SKU 69510058 ()
-  https://clabutor.com.ar 'hormigonera': 0 resultados, ninguno con SKU 69510058 ()
-  https://femacba.com.ar '69510058': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69510058&per_page=50
-  https://femacba.com.ar 'hormigonera': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=hormigonera&per_page=50
-  https://www.femacba.com.ar/?s=69510058: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=hormigonera: 177 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: True
-  listado: imgs cerca=['mods/html/fil/Model/Product/1119/thumb_03_69510065-1.jpg.webp', 'mods/html/fil/Model/Product/1057/thumb_03_'] links cerca=['https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html', 'https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html']
-  producto https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/1057/69510058-1.jpg.webp
-  OK https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes/hormigonera-fema-200-lt-motor-800w-volteo.html (femacba (html)) -> 69510058.webp [66 KB]
-69501490:
-  https://clabutor.com.ar '69501490': 0 resultados, ninguno con SKU 69501490 ()
-  https://clabutor.com.ar 'rampa acero': 0 resultados, ninguno con SKU 69501490 ()
-  https://femacba.com.ar '69501490': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69501490&per_page=50
-  https://femacba.com.ar 'rampa acero': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=rampa+acero&per_page=50
-  https://www.femacba.com.ar/?s=69501490: 177 links; SKU en la página: False
-  listado: imgs cerca=['mods/html/fil/Model/Product/981/thumb_03_69501480-1.jpg.webp', 'mods/html/fil/Model/Product/981/thumb_03_69501480-1-2.jpg.webp', 'mods/html/fil/Model/Product/982/thumb_03_'] links cerca=['https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html', 'https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html', 'https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html', 'https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html']
-  producto https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/982/69501490-1.jpg.webp
-  OK https://www.femacba.com.ar/jardineria/rampas/rampa-acero-1830x230x50-mm-caja-x-2-uni.html (femacba (html)) -> 69501490.webp [164 KB]
-Sin foto: 69370029, 69370211, 69367162, 57071804, 69360062
+  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
+  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
+  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
+  encontrado en https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas?page=2
+  listado: imgs cerca=['mods/html/fil/Model/Product/406/thumb_03_69360008-1.jpg.webp', 'mods/html/fil/Model/Product/386/thumb_03_'] links cerca=['https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html', 'https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html', 'https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html', 'https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html']
+  producto https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html -> https://www.femacba.com.ar/mods/html/fil/Model/Product/386/69360062-1.jpg.webp
+  OK https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas/electrobo-fema-centrifuga-dfc158-1-hp.html (femacba (html)) -> 69360062.webp [50 KB]
+Sin foto: 69370029, 69370211, 69367162
