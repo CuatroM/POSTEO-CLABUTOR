@@ -34,7 +34,7 @@ def camion(tam=150, color="#111"):
 
 def caja():
     """Caja de envío con la cinta de Clabutor, saliendo en camino (líneas de velocidad)."""
-    return f'''<svg viewBox="0 0 640 470" width="600" xmlns="http://www.w3.org/2000/svg">
+    return f'''<svg viewBox="0 0 640 470" width="560" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="350" cy="440" rx="230" ry="20" fill="#000" opacity=".08"/>
   <path d="M30 150h90M0 210h120M40 270h80" stroke="{ROJO}" stroke-width="12" stroke-linecap="round"/>
   <polygon points="160,140 360,70 560,140 360,210" fill="#E9C99A"/>
@@ -43,8 +43,8 @@ def caja():
   <polygon points="240,112 440,182 440,212 240,142" fill="{ROJO}" opacity=".0"/>
   <polygon points="250,108 280,98 480,168 450,178" fill="{ROJO}"/>
   <polygon points="450,178 480,168 480,388 450,398" fill="#B00500"/>
-  <g transform="translate(220 255) skewY(19)">
-    <rect x="0" y="0" width="120" height="40" fill="#111"/>
+  <g transform="translate(192 248) skewY(19)">
+    <rect x="0" y="0" width="150" height="40" fill="#111"/>
     <rect x="10" y="12" width="14" height="14" fill="{ROJO}"/>
     <text x="34" y="27" font-family="Titular" font-weight="900" font-size="20" letter-spacing="1" fill="#fff">CLABUTOR</text>
   </g>
@@ -95,9 +95,9 @@ def placas(g):
 <div class="volanta">Razón 02</div>
 <h1 style="font-size:116px">Envío express<br><em>en 48 hs</em></h1>
 <p class="bajada" style="font-size:34px">Pedí en <b>clabutor.com.ar</b> con compra segura<br>y <b>recibilo rápido.</b></p>
-<div style="position:relative;margin-top:30px;height:560px;display:flex;align-items:center;justify-content:center">
-  {caja()}
-  <div style="position:absolute;left:0;bottom:24px;display:flex;align-items:center;gap:18px;background:#111;color:#fff;padding:16px 26px">
+<div style="position:absolute;left:80px;right:80px;top:560px;bottom:140px;display:flex;flex-direction:column">
+  <div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center">{caja()}</div>
+  <div style="align-self:flex-start;display:flex;align-items:center;gap:18px;background:#111;color:#fff;padding:16px 26px;margin-bottom:24px">
     {camion(70, "#fff")}<span style="font-family:Titular;font-weight:900;font-size:30px;letter-spacing:3px">ENVÍOS A TODO EL PAÍS</span>
   </div>
 </div>
