@@ -91,3 +91,6 @@ html, body { width: 1080px; height: 1920px; }
 .precio-cyber { font-size: 140px; }
 .ficha { margin-top: 26px; }
 .panel-oferta img { width: 86%; height: 86%; }
+/* Barras de progreso: entran aunque haya muchas historias */
+.pie-h .barras { width: 460px; justify-content: flex-end; gap: 6px; }
+.pie-h .barras span { width: auto; flex: 0 1 50px; min-width: 12px; }

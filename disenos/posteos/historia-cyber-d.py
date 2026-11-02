@@ -39,7 +39,7 @@ OFERTAS = [
     ("69360062", "69360062", "Electrobomba centrífuga Fema DFC158 1 HP", 108416,
      "Agua con presión<br><em>en toda la casa</em>"),
     ("69501210", "69501210 + 69501232", "Andamio galvanizado 1219 × 1700 + plataforma", 128114.8 + 68017.49,
-     "Andamio completo<br><em>con plataforma</em>"),
+     "Andamio listo<br><em>con plataforma</em>"),
     ("69510058", "69510058", "Hormigonera Fema 200 L 800 W volteo", 573362.4,
      "Mezclá más<br><em>en menos tiempo</em>"),
     ("69501490", "69501490", "Set 2 rampas de acero 680 kg", 237256.8,
@@ -50,6 +50,10 @@ OFERTAS = [
 def placas(g):
     salida = []
     for foto, sku, nombre, costo, titulo in OFERTAS:
+        # Solo los que ya tienen foto recortada; los demás se suman cuando llegue la foto.
+        if not (g.AQUI / "productos" / "recortes" / f"{foto}.png").exists():
+            print(f"Sin foto todavía: {sku} {nombre}")
+            continue
         html = _c.placa_oferta(g, foto, nombre, None, round(costo * MARGEN), titulo, True)
         html = html.replace(f"COD. {g.e(foto)}", f"COD. {g.e(sku)}")
         salida.append(("azul", html))
