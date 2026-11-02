@@ -89,6 +89,12 @@ def _abs(u):
 
 def _desde_listado(sku, txt):
     """En un listado que muestra el SKU, toma la foto y el link más cercanos al código."""
+    # 0) una imagen cuyo nombre lleva el SKU (en TiendaQuick: .../thumb_03_<SKU>-1.jpg.webp -> versión grande)
+    directas = re.findall(r'["\'(]([^"\'()\s]*?' + re.escape(sku) + r'[^"\'()\s]*?\.(?:jpe?g|png|webp))', txt, re.I)
+    if directas:
+        img = _abs(re.sub(r"thumb_\d+_", "", directas[0]))
+        print(f"  imagen con el SKU en el nombre -> {img}")
+        return "femacba (listado)", {"name": sku}, img
     i = txt.find(sku)
     ventana_antes, ventana_despues = txt[max(0, i - 4000):i], txt[i:i + 1500]
     imgs = [m for m in re.findall(r'<img[^>]+(?:data-src|src)=["\']([^"\']+)', ventana_antes)
