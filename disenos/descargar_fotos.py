@@ -32,6 +32,8 @@ def norm(s):
 
 
 def encontrar(sku, consulta):
+    if consulta.strip().lower() == "drive":     # "SKU | drive" = buscar directo en Drive
+        return encontrar_drive(sku)
     for sitio in SITIOS:
         for termino in [sku] + ([consulta] if consulta else []):
             try:

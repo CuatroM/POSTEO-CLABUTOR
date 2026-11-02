@@ -1,4 +1,4 @@
-# Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece.
-69370029 | compresor duca pro
-69370211 | compresor fema
-69367162 | motor briggs stratton
+# Un SKU por línea. Opcional: "SKU | búsqueda" si el código solo no aparece; "SKU | drive" busca directo en Drive.
+69370029 | drive
+69370211 | drive
+69367162 | drive
