@@ -1,6 +1,7 @@
 """Historias CyberMonday — ofertas FEMA (mismo diseño que las placas 5 a 7 de "Arrancó el CyberMonday").
 Precio = costo informado por la sincronización (BaseLinker, INVENTARIO COMPLETO FEMA 2026 MATIAS,
-grupo 65271) + 35 %, redondeado al peso. Envío gratis a todo el país. Solo productos con stock."""
+grupo 65271) + 35 %, redondeado al peso. Envío gratis a todo el país. Solo productos con stock y con foto
+(el motor B&S 69367162 quedó afuera: no hay foto en las webs ni en Drive)."""
 
 import importlib.util
 from pathlib import Path
@@ -30,8 +31,6 @@ OFERTAS = [
      "El compresor<br><em>que rinde todo</em>"),
     ("69502230-1", "69502230-1", "Carretilla Fema doble rueda 65 L 150 kg", 73540.74,
      "Cargá más,<br><em>cansate menos</em>"),
-    ("69367162", "69367162", "Motor B&S 8,75 HP eje vertical OHV", 272077.52,
-     "Más fuerza<br><em>para tu máquina</em>"),
     ("69500950", "69500950", "Escalera dieléctrica doble 12 peldaños 3,66 m", 433253.37,
      "Llegá alto<br><em>con seguridad</em>"),
     ("57071804", "57071804", "Manguera de riego 1/2\" 25 m", 9614.18,
