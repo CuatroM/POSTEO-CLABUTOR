@@ -131,7 +131,7 @@ def marco_historia(cuerpo, n, total, fondo="azul", cinta="cyber"):
     tira = f'<div class="cinta">{CINTAS[cinta]}</div>' if cinta else ""
     return f'''<!doctype html><html><head><meta charset="utf-8"><meta name="tamano" content="1080x1920">
 <link rel="stylesheet" href="../../historia.css"></head>
-<body><div class="historia {fondo}">
+<body><div class="historia {fondo}{"" if cinta else " sin-cinta"}">
 {tira}
 <div class="marca-h"><i></i>CLABUTOR</div>
 <div class="cuerpo" style="overflow:hidden">{cuerpo}</div>

@@ -96,3 +96,7 @@ html, body { width: 1080px; height: 1920px; }
 .pie-h .barras span { width: auto; flex: 0 1 50px; min-width: 12px; }
 /* Regla: las historias claras van siempre con fondo blanco (sin grises) */
 .historia.gris { background: var(--blanco); }
+/* Historias sin cinta de campaña: la marca y el cuerpo suben */
+.historia.sin-cinta .marca-h { top: 240px; }
+.historia.sin-cinta .cuerpo { top: 330px; }
+.historia.sin-cinta .panel-oferta { height: 650px; }
