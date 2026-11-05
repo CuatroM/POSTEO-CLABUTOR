@@ -1,6 +1,6 @@
 """Historias — Compresores, de chico a grande (solo con stock en BaseLinker al 05/11).
 Precio = costo informado por la sincronización (INVENTARIO COMPLETO FEMA 2026 MATIAS, grupo 65271)
-+ 35 %, redondeado al peso. Envío gratis a todo el país. Historias de producto sin barras."""
++ 40 %, redondeado al peso. Envío gratis a todo el país. Historias de producto sin barras."""
 
 import importlib.util
 from pathlib import Path
@@ -10,7 +10,7 @@ FORMATO = "historia"
 CINTA = None
 RUBRO = ""
 TEXTO = ""
-MARGEN = 1.35
+MARGEN = 1.40
 NARANJA = "#FF6A00"
 
 _spec = importlib.util.spec_from_file_location("cyber_c", Path(__file__).with_name("historia-cyber-c.py"))
