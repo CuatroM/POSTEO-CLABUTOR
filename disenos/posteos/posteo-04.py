@@ -8,7 +8,7 @@ RUBRO = "Bulonería · Herramientas"
 ROJO = "#E10600"
 
 TEXTO = """
-¡Seguimos con precios promocionales! 🔥 Mantenemos las ofertas en herramientas y maquinaria para obra, taller y jardín. Stock limitado: cuando se terminan, vuelven a precio de lista.
+¡Seguimos con precios promocionales! 🔥 Mantenemos las ofertas en herramientas y maquinaria para obra, taller y jardín.
 
 • Amoladora angular en kit 750 W Gamma: $85.500
 • Soldadora inverter ARC130 Gamma: $97.500
@@ -71,23 +71,16 @@ def placa_producto(g, sku, nombre, antes, ahora, titulo, envio):
 
 
 def placas(g):
-    lista = "".join(
-        f'<div style="display:flex;align-items:center;gap:22px;padding:15px 0;border-bottom:2px solid #333">'
-        f'<span style="width:12px;height:12px;background:{ROJO};flex:none"></span>'
-        f'<span style="font-family:Titular;font-weight:700;font-size:32px;white-space:nowrap">{t}</span></div>'
-        for t in ["Amoladora angular Gamma", "Soldadora inverter Gamma", "Soldadora inverter Salkor",
-                  "Compresor a correa 180 L", "Desmalezadora Stiga"])
     maximo = max(round((1 - a / b) * 100) for _, _, b, a, _, _ in PRODUCTOS if b)
     portada = f'''
 <div class="volanta">Ofertas que siguen</div>
 <h1 style="font-size:106px">Seguimos con<br><em>precios</em><br><em>promocionales</em></h1>
-<p class="bajada" style="font-size:34px">Mantenemos las ofertas en estos productos.<br><b>Stock limitado: aprovechalas mientras duren.</b></p>
-<div style="display:flex;align-items:center;gap:40px;margin-top:30px">
-  <div style="flex:1">{lista}</div>
-  <div style="background:{ROJO};color:#fff;padding:22px 26px;transform:rotate(-4deg);text-align:center;flex:none">
-    <div style="font-family:Titular;font-weight:900;font-size:30px;letter-spacing:4px">HASTA</div>
-    <div style="font-family:Titular;font-weight:900;font-size:120px;line-height:.85;letter-spacing:-5px">{maximo}%</div>
-    <div style="font-family:Titular;font-weight:900;font-size:30px;letter-spacing:6px">OFF</div>
+<p class="bajada" style="font-size:34px;white-space:nowrap">Mantenemos las ofertas en herramientas y maquinaria.<br><b>Deslizá y elegí la tuya &rarr;</b></p>
+<div style="position:absolute;left:80px;right:80px;top:740px;bottom:160px;display:flex;align-items:center;justify-content:center">
+  <div style="background:{ROJO};color:#fff;padding:26px 60px 30px;transform:rotate(-4deg);text-align:center">
+    <div style="font-family:Titular;font-weight:900;font-size:48px;letter-spacing:8px">HASTA</div>
+    <div style="font-family:Titular;font-weight:900;font-size:250px;line-height:.8;letter-spacing:-10px">{maximo}%</div>
+    <div style="font-family:Titular;font-weight:900;font-size:56px;letter-spacing:12px;margin-top:6px">OFF</div>
   </div>
 </div>
 '''
