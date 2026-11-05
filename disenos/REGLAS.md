@@ -28,6 +28,7 @@
 - Revisar siempre el render antes de publicar para confirmar que ningún renglón quede con una palabra suelta ni que nada se superponga.
 
 ## Historias (1080×1920)
+- **Colores:** fuera de una campaña, las historias van con los colores de Clabutor (blanco, negro y rojo #E10600), igual que el muro: `fondo = "blanca colores-marca"` (o `"azul colores-marca"` para fondo negro), sin cinta. El azul oscuro y el naranja son SOLO para la campaña CyberMonday.
 - Se arman con `FORMATO = "historia"` en el archivo de `posteos/`; el marco está en `generar.py` y el estilo en `historia.css` (misma tipografía Inter).
 - Campaña CyberMonday: azul oscuro #0B1F3A + naranja #FF6A00, y cinta fija "CYBERMONDAY · 2·3·4 NOV" arriba en todas las piezas.
 - La cinta va debajo de la barra de perfil de Instagram y el pie (www.clabutor.com.ar abajo a la izquierda) por encima de la zona de respuesta, para que nada quede tapado.

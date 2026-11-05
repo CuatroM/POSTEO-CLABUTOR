@@ -105,3 +105,12 @@ html, body { width: 1080px; height: 1920px; }
 .historia.blanca .panel-oferta::before { background: var(--blanco); }
 .historia.blanca .panel-oferta img { filter: none; }
 .historia.blanca .ficha .sku-o { color: #6B7A93; }
+
+/* Colores de marca Clabutor (todo lo que NO es campaña): blanco, negro y rojo #E10600 */
+.historia.colores-marca { --azul: #111111; --naranja: #E10600; }
+.historia.colores-marca.blanca { color: #111111; }
+.historia.colores-marca .bajada { color: #555555; }
+.historia.colores-marca .bajada b { color: #111111; }
+.historia.colores-marca .ficha .sku-o { color: #8A8A8A; }
+.historia.colores-marca .pie-h .barras span { background: #DDDDDD; }
+.historia.colores-marca .pie-h .barras span.activa { background: #E10600; }

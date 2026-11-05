@@ -11,7 +11,7 @@ CINTA = None
 RUBRO = ""
 TEXTO = ""
 MARGEN = 1.40
-NARANJA = "#FF6A00"
+NARANJA = "#E10600"  # rojo Clabutor (no es campaña)
 
 _spec = importlib.util.spec_from_file_location("cyber_c", Path(__file__).with_name("historia-cyber-c.py"))
 _c = importlib.util.module_from_spec(_spec)
@@ -46,7 +46,7 @@ def camion(tam=60):
 
 def placas(g):
     filas = "".join(
-        f'<div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;border-bottom:3px solid #0B1F3A">'
+        f'<div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;border-bottom:3px solid #111">'
         f'<span style="font-family:Titular;font-weight:700;font-size:40px;line-height:1.1">{uso}</span>'
         f'<span style="font-family:Titular;font-weight:900;font-size:44px;color:{NARANJA};white-space:nowrap">{rango}</span></div>'
         for uso, rango in GUIA)
@@ -59,11 +59,11 @@ def placas(g):
   {camion(76)}<span style="font-family:Titular;font-weight:900;font-size:44px;letter-spacing:2px">ENVÍO GRATIS A TODO EL PAÍS</span>
 </div>
 '''
-    salida = [("blanca", info)]
+    salida = [("blanca colores-marca", info)]
     for sku, nombre, costo, titulo in COMPRESORES:
         if not (g.AQUI / "productos" / "recortes" / f"{sku}.png").exists():
             print(f"Sin foto: {sku}")
             continue
         html = _c.placa_oferta(g, sku, nombre, None, round(costo * MARGEN), titulo, True)
-        salida.append(("blanca", html.replace("OFERTA CYBER", "COMPRESORES")))
+        salida.append(("blanca colores-marca", html.replace("OFERTA CYBER", "COMPRESORES")))
     return salida
