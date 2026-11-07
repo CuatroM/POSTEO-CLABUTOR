@@ -50,7 +50,7 @@ def placas(g):
   <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:6px 0">
     <div>
       {sol(110)}
-      <div style="font-family:Titular;font-weight:900;font-size:62px;line-height:.98;letter-spacing:-1px;margin-top:14px">¡Bienvenido<br>a la<br><span style="color:{CELESTE}">Argentina!</span></div>
+      <div style="font-family:Titular;font-weight:900;font-size:62px;line-height:.98;letter-spacing:-1px;margin-top:14px">¡Bienvenido<br>a <span style="color:{CELESTE}">Córdoba!</span></div>
     </div>
     <div style="border-left:10px solid {ROJO};padding:4px 0 4px 22px">
       <div style="font-family:Titular;font-weight:900;font-size:32px;line-height:1.1">Seguí comprando<br>online en<br><span style="color:{ROJO}">clabutor.com.ar</span></div>
