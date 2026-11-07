@@ -10,7 +10,7 @@ ROJO = "#E10600"
 
 
 def hoja(dia, nombre):
-    return f'''<div style="background:#fff;color:#111;width:290px;box-shadow:0 14px 0 rgba(0,0,0,.35)">
+    return f'''<div style="background:#fff;color:#111;width:290px;border:3px solid #111;box-shadow:0 12px 0 #111">
   <div style="background:{ROJO};color:#fff;font-family:Titular;font-weight:900;font-size:34px;letter-spacing:6px;text-align:center;padding:16px 0">{nombre}</div>
   <div style="font-family:Titular;font-weight:900;font-size:180px;line-height:1;letter-spacing:-8px;text-align:center;padding:22px 0 6px">{dia}</div>
   <div style="font-weight:700;font-size:28px;letter-spacing:5px;text-align:center;color:#777;padding-bottom:26px">NOVIEMBRE</div>
@@ -30,4 +30,4 @@ def placas(g):
   <div style="font-family:Titular;font-weight:900;font-size:42px;line-height:1.08">Mientras tanto, seguí comprando<br>online en <span style="color:{ROJO}">clabutor.com.ar</span></div>
 </div>
 '''
-    return [("azul colores-marca", info)]
+    return [("blanca colores-marca", info)]
