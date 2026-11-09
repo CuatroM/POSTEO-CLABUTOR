@@ -1,6 +1,6 @@
 """Historias — Bordeadoras y desmalezadoras FEMA con stock (export BaseLinker 09/11).
 Precio = costo informado por la sincronización (INVENTARIO COMPLETO FEMA 2026 MATIAS, grupo 65271)
-+ 40 %, redondeado al peso. Envío gratis a todo el país. Colores Clabutor (no es campaña).
++ 35 % + envío (10 % del costo, mínimo $20.000), redondeado al peso. Envío gratis a todo el país. Colores Clabutor (no es campaña).
 Historias de producto sin barras; cada una indica el uso: hogar o profesional."""
 
 import importlib.util
@@ -11,7 +11,13 @@ FORMATO = "historia"
 CINTA = None
 RUBRO = ""
 TEXTO = ""
-MARGEN = 1.40
+MARGEN = 1.35          # 35 % sobre el costo
+ENVIO_PCT = 0.10       # envío: 10 % del costo...
+ENVIO_MIN = 20000      # ...con un mínimo de $20.000
+
+
+def precio(costo):
+    return round(costo * MARGEN + max(costo * ENVIO_PCT, ENVIO_MIN))
 ROJO = "#E10600"
 
 _spec = importlib.util.spec_from_file_location("cyber_c", Path(__file__).with_name("historia-cyber-c.py"))
@@ -66,6 +72,6 @@ def placas(g):
         if not (g.AQUI / "productos" / "recortes" / f"{sku}.png").exists():
             print(f"Sin foto: {sku}")
             continue
-        html = _c.placa_oferta(g, sku, nombre, None, round(costo * MARGEN), titulo, True)
+        html = _c.placa_oferta(g, sku, nombre, None, precio(costo), titulo, True)
         salida.append(("blanca colores-marca", html.replace("OFERTA CYBER", uso)))
     return salida
