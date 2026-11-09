@@ -33,9 +33,9 @@ EQUIPOS = [
 ]
 
 GUIA = [
-    ("Bordes y césped del patio", "Bordeadora eléctrica", "HOGAR"),
-    ("Pasto alto en quintas y terrenos chicos", "Desmalezadora 26 cc", "HOGAR"),
-    ("Malezas, terrenos grandes y campo", "Desmalezadora 43 a 52 cc", "PROFESIONAL"),
+    ("¿Querés emprolijar el césped del patio?", "Bordeadora eléctrica", "HOGAR"),
+    ("¿Pasto alto en la quinta o en un terreno chico?", "Desmalezadora 26 cc", "HOGAR"),
+    ("¿Malezas, terrenos grandes o campo?", "Desmalezadora 43 a 52 cc", "PROFESIONAL"),
 ]
 
 
@@ -48,14 +48,14 @@ def placas(g):
     filas = "".join(
         f'<div style="padding:34px 0;border-bottom:3px solid #111">'
         f'<div style="display:flex;justify-content:space-between;align-items:center;gap:16px">'
-        f'<span style="font-weight:600;font-size:32px;color:#555">{uso}</span>'
+        f'<span style="font-family:Titular;font-weight:700;font-size:36px;line-height:1.12">{uso}</span>'
         f'<span style="font-family:Titular;font-weight:900;font-size:22px;letter-spacing:3px;color:#fff;background:{"#111" if tag == "HOGAR" else ROJO};padding:6px 12px;white-space:nowrap">{tag}</span></div>'
-        f'<div style="font-family:Titular;font-weight:900;font-size:46px;margin-top:6px">{equipo}</div></div>'
+        f'<div style="font-weight:600;font-size:34px;color:#555;margin-top:10px">&rarr; Te sirve: <b style="font-family:Titular;font-weight:900;font-size:40px;color:{ROJO}">{equipo}</b></div></div>'
         for uso, equipo, tag in GUIA)
     info = f'''
 <div class="pildora"><i></i>JARDÍN</div>
-<h1 style="font-size:92px;margin-top:26px;white-space:nowrap">¿Bordeadora o<br><em>desmalezadora?</em></h1>
-<p class="bajada" style="font-size:40px">La herramienta justa para cada jardín.<br><b>Elegí según el trabajo que tenés.</b></p>
+<h1 style="font-size:116px;margin-top:26px">¿Qué estás<br><em>necesitando?</em></h1>
+<p class="bajada" style="font-size:40px">Cada jardín pide su herramienta.<br><b>Encontrá la tuya según tu situación.</b></p>
 <div style="margin-top:40px">{filas}</div>
 <div style="display:flex;align-items:center;gap:22px;background:{ROJO};color:#fff;padding:26px 30px;margin-top:60px">
   {camion(76)}<span style="font-family:Titular;font-weight:900;font-size:44px;letter-spacing:2px">ENVÍO GRATIS A TODO EL PAÍS</span>
