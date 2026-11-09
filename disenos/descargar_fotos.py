@@ -97,6 +97,16 @@ def encontrar_drive(sku):
         if parecidos:
             print(f"  Drive: nombres parecidos: {', '.join(parecidos)}")
         return None
+    print(f"  Drive: candidatos {[c[0] for c in candidatos]}")
+    # Preferir la foto del equipo: SKU.jpg, luego SKU-1.jpg..., y al final las de accesorios (ARNES, KIT...)
+    def orden(c):
+        resto = Path(c[0]).stem[len(sku):].lstrip(" ._-").upper()
+        if resto == "":
+            return (0, c[0])
+        if resto.isdigit():
+            return (1, c[0])
+        return (2, c[0])
+    candidatos.sort(key=orden)
     nombre, fid = candidatos[0]
     print(f"  Drive: {nombre}")
     ext = Path(nombre).suffix.lower()
