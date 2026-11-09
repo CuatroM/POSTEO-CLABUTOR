@@ -42,3 +42,10 @@
   - Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
   - Sucursal: 351 227 2420 · Blvd. de los Alemanes 5310 - Córdoba
 - En las placas, el producto tiene prioridad de tamaño sobre el bloque de contacto.
+
+## Precios (productos FEMA con envío gratis)
+- Precio = **costo + 35 % + envío**, donde envío = **10 % del costo, con un mínimo de $20.000**. Redondeado al peso.
+  - Costo = el que informa la sincronización en BaseLinker (INVENTARIO COMPLETO FEMA 2026 MATIAS, grupo de precios 65271).
+  - Se aplica en **todas** las piezas con envío gratis (historias y posteos), salvo que el contenido indique otro precio.
+- Solo productos **con stock** y **con foto**. Para tener stock y costo al día, correr antes el export de BaseLinker (`bl_exportar.yml`, buscar "COMPLETO FEMA").
+- Función lista para usar: `precio_envio_gratis(costo)` en `disenos/generar.py`.

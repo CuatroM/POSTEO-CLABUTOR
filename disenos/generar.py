@@ -77,6 +77,12 @@ def svg_mapa(ancho, marcas):
             f'<path d="{mapa.path(ancho)}" fill="#F2F2F2" stroke="#111" stroke-width="4" stroke-linejoin="round"/>{pts}</svg>')
 
 
+# ---------- Precios ----------
+def precio_envio_gratis(costo, margen=0.35, envio_pct=0.10, envio_min=20000):
+    """Regla de precio para productos con envío gratis: costo + 35 % + envío (10 % del costo, mínimo $20.000)."""
+    return round(costo * (1 + margen) + max(costo * envio_pct, envio_min))
+
+
 # ---------- Piezas ----------
 FOTOS = AQUI / "fotos"
 
