@@ -33,6 +33,7 @@ def local(foto, nombre, direccion, wa):
 
 def placas(g):
     info = f'''
+<style>.marca-h {{ font-size: 50px; letter-spacing: 4px; top: 206px; gap: 16px; }} .marca-h i {{ width: 28px; height: 28px; }}</style>
 <div class="pildora"><i></i>HORARIO HABITUAL</div>
 <h1 style="font-size:122px;margin-top:24px;white-space:nowrap">¡Ya estamos<br><em>abiertos!</em></h1>
 <p class="bajada" style="font-size:38px">Volvimos a nuestro horario habitual.<br><b>¡Los esperamos en nuestras sucursales!</b></p>
