@@ -39,19 +39,27 @@ def pesos(n):
 
 
 TEXTO = """
-Abastecé tractores, camionetas, generadores y maquinaria sin ir a la estación de servicio. ⛽🚜
+⛽ Abastecé tractores, camionetas, generadores y maquinaria sin ir a la estación de servicio.
 
-Electrobombas FEMA para combustible, a 12 V o 220 V, con o sin cuenta litros:
+Con una electrobomba FEMA tenés tu propio surtidor en el campo, el taller o la obra: cargás donde trabajás, ahorrás viajes y controlás cada litro que sale del tanque.
 
-""" + "\n".join(f"• {n}: {pesos(precio(c))}" for _, _, _, n, c, _ in PRODUCTOS) + """
+🔧 Elegí la tuya:
 
-Envío gratis por transporte Credefin.
+• Kit surtidor 12 V (69359811): 60 L/min, se conecta a la batería, con cuenta litros, manguera y pistola. """ + pesos(precio(426972)) + """
+• Kit surtidor diésel 220 V (69359918): 60 L/min, 350 W, conexión 1", con cuenta litros y pico surtidor. Ideal para instalación fija. """ + pesos(precio(588060)) + """
+• Electrobomba 12 V para gasoil (69359805): 80 L/min, conexión 1", apta uso continuo. Sin cuenta litros. """ + pesos(precio(487260.8)) + """
+• Kit 12 V para nafta (69359806): 57 L/min, con caudalímetro, manguera y pistola automática. """ + pesos(precio(691152)) + """
+• Cuenta litros FEMA (69359687): cuerpo de aluminio, display de 4/8 dígitos, parcial y total, conexión 1". Para sumar a tu bomba. """ + pesos(precio(103498.56)) + """
 
-Comprá en clabutor.com.ar o escribinos por WhatsApp:
+🚚 Envío gratis por transporte Credefin.
+
+📲 ¿Dudas sobre cuál te conviene? Escribinos por WhatsApp y te asesoramos:
 Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
 Sucursal: 351 227 2420 · Blvd. de los Alemanes 5310 - Córdoba
 
-#clabutor #agro #campo #combustible #gasoil #fema #cordoba
+🛒 Comprá en clabutor.com.ar
+
+#clabutor #agro #campo #combustible #gasoil #surtidor #electrobomba #fema #cordoba
 """
 
 
