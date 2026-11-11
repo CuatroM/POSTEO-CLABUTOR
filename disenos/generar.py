@@ -119,7 +119,7 @@ def marco(cuerpo, n, total, rubro, fondo=""):
     barras = "" if not n else "".join(f'<span class="{"activa" if i <= n else ""}"></span>' for i in range(1, total + 1))
     return f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../estilo.css"></head>
 <body><div class="placa {fondo}">
-<div class="encabezado"><div class="marca"><i></i>CLABUTOR</div><div class="rubro">{e(rubro)}</div></div>
+<div class="encabezado"><div class="marca"><img class="logo" src="../../marca/clabutor-logo.png" alt="CLABUTOR"></div><div class="rubro">{e(rubro)}</div></div>
 {cuerpo}
 <div class="pie"><div class="usuario">www.clabutor.com.ar</div><div class="progreso"><div class="barras">{barras}</div>{n:02d} / {total:02d}</div></div>
 </div></body></html>'''
@@ -139,7 +139,7 @@ def marco_historia(cuerpo, n, total, fondo="azul", cinta="cyber"):
 <link rel="stylesheet" href="../../historia.css"></head>
 <body><div class="historia {fondo}{"" if cinta else " sin-cinta"}">
 {tira}
-<div class="marca-h"><i></i>CLABUTOR</div>
+<div class="marca-h"><img class="logo" src="../../marca/clabutor-logo.png" alt="CLABUTOR"></div>
 <div class="cuerpo" style="overflow:hidden">{cuerpo}</div>
 <div class="pie-h"><div class="web">www.clabutor.com.ar</div><div class="barras">{barras}</div></div>
 </div></body></html>'''

@@ -73,3 +73,5 @@ h1 em { font-style: normal; color: var(--rojo); }
 .pin svg { flex: none; }
 /* Regla: las placas claras van siempre con fondo blanco (sin grises) */
 .placa.gris { background: var(--blanco); }
+/* Logo oficial de Clabutor en el encabezado (reemplaza la palabra) */
+.marca .logo { height: 62px; width: auto; display: block; }

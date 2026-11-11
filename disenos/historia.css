@@ -119,3 +119,6 @@ html, body { width: 1080px; height: 1920px; }
 .historia.colores-marca.azul .bajada b { color: #FFFFFF; }
 .historia.colores-marca.azul .pie-h .barras span { background: #3A3A3A; }
 .historia.colores-marca.azul .pie-h .barras span.activa { background: #E10600; }
+/* Logo oficial de Clabutor (reemplaza la palabra) */
+.marca-h .logo { height: 62px; width: auto; display: block; }
+.historia.sin-cinta .marca-h { top: 222px; }

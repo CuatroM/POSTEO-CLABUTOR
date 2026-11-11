@@ -45,7 +45,7 @@ Electrobombas FEMA para combustible, a 12 V o 220 V, con o sin cuenta litros:
 
 """ + "\n".join(f"• {n}: {pesos(precio(c))}" for _, _, _, n, c, _ in PRODUCTOS) + """
 
-Envío gratis a todo el país.
+Envío gratis por transporte Credefin.
 
 Comprá en clabutor.com.ar o escribinos por WhatsApp:
 Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
@@ -78,7 +78,7 @@ def placa_producto(g, sku, volanta, titulo, nombre, costo, datos):
 <div style="font-weight:600;font-size:18px;color:#8A8A8A;letter-spacing:2px;margin-top:4px">COD. {sku}</div>
 <div style="display:flex;align-items:center;gap:26px;margin-top:6px">
   <span style="font-family:Titular;font-weight:900;font-size:112px;line-height:.95;letter-spacing:-4px;color:{ROJO}">{pesos(precio(costo))}</span>
-  <span style="background:#111;color:#fff;padding:12px 18px;font-family:Titular;font-weight:900;font-size:22px;letter-spacing:2px;line-height:1.15">ENVÍO<br>GRATIS</span>
+  <span style="background:#111;color:#fff;padding:12px 18px;font-family:Titular;font-weight:900;font-size:22px;letter-spacing:2px;line-height:1.15">ENVÍO GRATIS POR<br>TRANSPORTE CREDEFIN</span>
 </div>
 '''
 
@@ -95,7 +95,7 @@ def placas(g):
 <p class="bajada" style="font-size:36px"><b>Abastecé tractores, camionetas, generadores<br>y maquinaria sin ir a la estación de servicio.</b></p>
 <div style="margin-top:26px">{puntos}</div>
 <div style="position:absolute;left:80px;right:80px;bottom:150px;background:{ROJO};color:#fff;padding:22px 30px;display:flex;justify-content:space-between;align-items:center">
-  <span style="font-family:Titular;font-weight:900;font-size:40px;letter-spacing:1px">ENVÍO GRATIS A TODO EL PAÍS</span>
+  <span style="font-family:Titular;font-weight:900;font-size:34px;letter-spacing:1px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</span>
   <span style="font-family:Titular;font-weight:900;font-size:40px">&rarr;</span>
 </div>
 '''

@@ -4,6 +4,7 @@
 - Los contenidos se sacan siempre tal cual indica MARKETING PRODUCTOS CONTENIDO para la cuenta de Clabutor.
 
 ## Diseño (siempre constante)
+- **Logo:** en el encabezado de posteos e historias va el logo oficial (`disenos/marca/clabutor-logo.png`), no la palabra CLABUTOR escrita.
 - Mismo sistema para todos los posteos: `estilo.css` (fondo blanco, negro y rojo #E10600, tipografía Inter), placas JPG 1080×1350.
 - Encabezado: marca CLABUTOR a la izquierda y rubro a la derecha.
 - Pie: **www.clabutor.com.ar abajo a la izquierda** (no poner @clabutor.cba). Progreso de placas a la derecha.
