@@ -85,7 +85,7 @@ def placa_producto(g, sku, volanta, titulo, nombre, costo, datos):
 
 def placas(g):
     puntos = "".join(
-        f'<div style="display:flex;align-items:center;gap:20px;padding:18px 0;border-bottom:2px solid #333">'
+        f'<div style="display:flex;align-items:center;gap:20px;padding:18px 0;border-bottom:2px solid #111">'
         f'<span style="width:14px;height:14px;background:{ROJO};flex:none"></span>'
         f'<span style="font-family:Titular;font-weight:700;font-size:36px">{t}</span></div>'
         for t in ["A 12 V (batería) o 220 V", "Hasta 80 litros por minuto", "Con o sin cuenta litros"])
@@ -99,4 +99,4 @@ def placas(g):
   <span style="font-family:Titular;font-weight:900;font-size:40px">&rarr;</span>
 </div>
 '''
-    return [("oscura", portada)] + [("", placa_producto(g, *p)) for p in PRODUCTOS]
+    return [("", portada)] + [("", placa_producto(g, *p)) for p in PRODUCTOS]
