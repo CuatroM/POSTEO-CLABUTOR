@@ -1,5 +1,5 @@
 """Posteo 5 — Agro: electrobombas de combustible y cuenta litros FEMA (muro, carrusel).
-Solo productos con stock (export BaseLinker 11/11). Precio = costo + 35 % + envío (10 % del costo, mín. $20.000).
+Solo productos con stock (export BaseLinker 11/11 14:16, después de la sincronización de las 13:06). Precio = costo + 35 % + envío (10 % del costo, mín. $20.000).
 Los tanques de combustible quedaron afuera: sin stock."""
 
 import importlib.util
@@ -17,19 +17,19 @@ ROJO = "#E10600"
 # sku, volanta, título, nombre, costo, datos técnicos
 PRODUCTOS = [
     ("69359811", "Kit surtidor 12 V", "Tu surtidor<br><em>en el campo</em>",
-     "Electrobomba FEMA 12 V kit surtidor completo", 341578,
+     "Electrobomba FEMA 12 V kit surtidor completo", 426972,
      ["60 L/min", "12 V a batería", "Con cuenta litros", "Manguera y pistola"]),
     ("69359918", "Kit surtidor 220 V", "Surtidor fijo<br><em>a 220 V</em>",
-     "Electrobomba diésel 220 V kit surtidor completo", 470448,
+     "Electrobomba diésel 220 V kit surtidor completo", 588060,
      ["60 L/min", "220 V · 350 W", "Conexión 1\"", "Con cuenta litros"]),
     ("69359805", "Electrobomba 12 V", "80 litros<br><em>por minuto</em>",
-     "Electrobomba FEMA 12 V para gasoil", 389809,
+     "Electrobomba FEMA 12 V para gasoil", 487260.8,
      ["80 L/min", "12 V a batería", "Conexión 1\"", "Uso continuo"]),
     ("69359806", "Kit para nafta 12 V", "Para nafta,<br><em>con pistola</em>",
-     "Electrobomba FEMA 12 V para nafta, kit completo", 552922,
+     "Electrobomba FEMA 12 V para nafta, kit completo", 691152,
      ["57 L/min", "12 V a batería", "Caudalímetro", "Pistola automática"]),
     ("69359687", "Cuenta litros", "Controlá<br><em>cada litro</em>",
-     "Cuenta litros FEMA de aluminio", 82799,
+     "Cuenta litros FEMA de aluminio", 103498.56,
      ["Display 4/8 dígitos", "Conexión 1\"", "Cuerpo de aluminio", "Parcial y total"]),
 ]
 
