@@ -270,11 +270,18 @@ def main():
     pedido = [(sku, q) for sku, q in pedido if sku.upper() != "BUSCAR"]
     for termino in busquedas:
         print(f"BUSCAR {termino}:")
-        try:
-            res = buscar(SITIOS[0], termino)
-        except Exception as ex:  # noqa: BLE001
-            print(f"  error {ex}")
-            continue
+        res = []
+        for sitio in SITIOS:
+            try:
+                r = buscar(sitio, termino)
+            except Exception as ex:  # noqa: BLE001
+                print(f"  {sitio}: error {ex}")
+                continue
+            print(f"  {sitio}: {len(r)} resultados")
+            for prod in r[:12]:
+                print(f"    - {prod.get('sku') or '?'} | {prod.get('name')} | imgs {len(prod.get('images') or [])}"
+                      f" | stock {prod.get('is_in_stock')} | {(prod.get('prices') or {}).get('price')}")
+            res += r
         for prod in res[:6]:
             imgs = prod.get("images") or []
             sku_p = (prod.get("sku") or "").strip()
