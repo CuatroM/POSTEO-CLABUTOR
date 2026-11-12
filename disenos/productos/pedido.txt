@@ -1,7 +1,8 @@
-# BUSCAR | término trae los primeros resultados de clabutor.com.ar
-BUSCAR | bulon
-BUSCAR | tuerca
-BUSCAR | arandela
-BUSCAR | varilla roscada
-BUSCAR | tornillo
-BUSCAR | tirafondo
+01412100 | drive
+02217016 | drive
+00009012 | drive
+07216010 | drive
+01810100 | drive
+02608050 | drive
+04112050 | drive
+01225100NF | drive
