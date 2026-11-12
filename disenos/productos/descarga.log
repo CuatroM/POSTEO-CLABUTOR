@@ -1,6 +1,90 @@
 BUSCAR bulon:
+  https://clabutor.com.ar: 50 resultados
+    - 01225200NF | BULON HEXAGONAL G5-UNF(12 HILOS)1X8 | imgs 0 | stock True | 10446
+    - 01225100NF | BULON HEXAGONAL G5-UNF(12 HILOS)1X4 | imgs 0 | stock True | 5864
+    - 01414035 | BULON HEXAGONAL 8.8 MA 14-2,00X35 | imgs 0 | stock True | 1131
+    - 01412100 | BULON HEXAGONAL 8.8 MA 12-1,75X100 | imgs 0 | stock True | 1738
+    - 01414045 | BULON HEXAGONAL 8.8 MA 14-2,00X45 | imgs 0 | stock True | 1311
+    - 01414040 | BULON HEXAGONAL 8.8 MA 14-2,00X40 | imgs 0 | stock True | 1222
+    - 01414030 | BULON HEXAGONAL 8.8 MA 14-2,00X30 | imgs 0 | stock True | 1041
+    - 01412170 | BULON HEXAGONAL 8.8 MA 12-1,75X170 | imgs 0 | stock True | 3368
+    - 01412130 | BULON HEXAGONAL 8.8 MA 12-1,75X130 | imgs 0 | stock True | 2234
+    - 01412120 | BULON HEXAGONAL 8.8 MA 12-1,75X120 | imgs 0 | stock True | 2028
+    - 01412110 | BULON HEXAGONAL 8.8 MA 12-1,75X110 | imgs 0 | stock True | 1875
+    - 01412090 | BULON HEXAGONAL 8.8 MA 12-1,75X90 | imgs 0 | stock True | 1589
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=bulon&per_page=50
 BUSCAR tuerca:
+  https://clabutor.com.ar: 50 resultados
+    - 02232025 | TUERCA AUTOFRENANTE ALTA UNF 1&#8243; | imgs 0 | stock True | 3206
+    - 02232022 | TUERCA AUTOFRENANTE ALTA UNF 7/8 | imgs 0 | stock True | 2207
+    - 02219112 | TUERCA AUTOFRENANTE BAJA MC 12MM | imgs 0 | stock True | 309
+    - 02219018 | TUERCA AUTOFRENANTE BAJA MB 18MM | imgs 0 | stock True | 975
+    - 02219016 | TUERCA AUTOFRENANTE BAJA MB 16MM | imgs 0 | stock True | 628
+    - 02219014 | TUERCA AUTOFRENANTE BAJA MB 14MM | imgs 0 | stock True | 486
+    - 02219012 | TUERCA AUTOFRENANTE BAJA MB 12MM | imgs 0 | stock True | 310
+    - 02219010 | TUERCA AUTOFRENANTE BAJA MB 10MM | imgs 0 | stock True | 211
+    - 02217024 | TUERCA AUTOFRENANTE BAJA MA 24MM | imgs 0 | stock True | 2592
+    - 02217020 | TUERCA AUTOFRENANTE BAJA MA 20MM | imgs 0 | stock True | 1221
+    - 02217018 | TUERCA AUTOFRENANTE BAJA MA 18MM | imgs 0 | stock True | 960
+    - 02217016 | TUERCA AUTOFRENANTE BAJA MA 16MM | imgs 0 | stock True | 620
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=tuerca&per_page=50
 BUSCAR arandela:
+  https://clabutor.com.ar: 50 resultados
+    - 00009020 | ARANDELA GROWER NATURAL 20MM | imgs 0 | stock True | 293
+    - 00009018 | ARANDELA GROWER NATURAL 18MM | imgs 0 | stock True | 232
+    - 00009016 | ARANDELA GROWER NATURAL 16MM | imgs 0 | stock True | 171
+    - 00009014 | ARANDELA GROWER NATURAL 14MM | imgs 0 | stock True | 116
+    - 00009012 | ARANDELA GROWER NATURAL 12MM | imgs 0 | stock True | 73
+    - 00009010 | ARANDELA GROWER NATURAL 10MM | imgs 0 | stock True | 49
+    - 00009008 | ARANDELA GROWER NATURAL 8MM | imgs 0 | stock True | 31
+    - 00009007 | ARANDELA GROWER NATURAL 7MM | imgs 0 | stock True | 18
+    - 00009006 | ARANDELA GROWER NATURAL 6MM | imgs 0 | stock True | 16
+    - 00009005 | ARANDELA GROWER NATURAL 5MM | imgs 0 | stock True | 12
+    - 00009004 | ARANDELA GROWER NATURAL 4MM | imgs 0 | stock True | 7
+    - 00008038 | ARANDELA GROWER NATURAL 1.1/2 | imgs 0 | stock True | 1974
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=arandela&per_page=50
 BUSCAR varilla roscada:
+  https://clabutor.com.ar: 50 resultados
+    - 07245050 | VARILLA ROSCADA H° NATURAL 2&#8243; | imgs 0 | stock True | 204610
+    - 07232004 | VARILLA ROSCADA H° NATURAL 5/32 | imgs 0 | stock True | 1652
+    - 07224005 | VARILLA ROSCADA H° NATURAL 3/16 | imgs 0 | stock True | 1809
+    - 07220006 | VARILLA ROSCADA H° NATURAL 1/4 | imgs 0 | stock True | 2351
+    - 07218008 | VARILLA ROSCADA H° NATURAL 5/16 | imgs 0 | stock True | 3572
+    - 07216010 | VARILLA ROSCADA H° NATURAL 3/8 | imgs 0 | stock True | 5111
+    - 07214011 | VARILLA ROSCADA H° NATURAL 7/16 | imgs 0 | stock True | 7244
+    - 07212014 | VARILLA ROSCADA H° NATURAL 9/16 | imgs 0 | stock True | 12145
+    - 07212012 | VARILLA ROSCADA H° NATURAL 1/2 | imgs 0 | stock True | 9305
+    - 07211016 | VARILLA ROSCADA H° NATURAL 5/8 | imgs 0 | stock True | 15076
+    - 07210019 | VARILLA ROSCADA H° NATURAL 3/4 | imgs 0 | stock True | 22103
+    - 07209022 | VARILLA ROSCADA H° NATURAL 7/8 | imgs 0 | stock True | 32470
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=varilla+roscada&per_page=50
 BUSCAR tornillo:
+  https://clabutor.com.ar: 50 resultados
+    - 22404010 | TORNILLO AC.INOXIDABLE FREZADA 5/32X3/8 | imgs 0 | stock True | 304
+    - 04112063 | TORNILLO PARKER FIJADORA 12X2.1/2 | imgs 0 | stock True | 218
+    - 04112050 | TORNILLO PARKER FIJADORA 12X2&#8243; | imgs 0 | stock True | 175
+    - 04112045 | TORNILLO PARKER FIJADORA 12X1.3/4 | imgs 0 | stock True | 158
+    - 02608076 | TORNILLO H° TANQUE ZINCADO 5/16X3&#8243; | imgs 0 | stock True | 585
+    - 02608063 | TORNILLO H° TANQUE ZINCADO 5/16X2.1/2 | imgs 0 | stock True | 505
+    - 02608057 | TORNILLO H° TANQUE ZINCADO 5/16X2.1/4 | imgs 0 | stock True | 464
+    - 02608050 | TORNILLO H° TANQUE ZINCADO 5/16X2&#8243; | imgs 0 | stock True | 424
+    - 02608045 | TORNILLO H° TANQUE ZINCADO 5/16X1.3/4 | imgs 0 | stock True | 387
+    - 02608038 | TORNILLO H° TANQUE ZINCADO 5/16X1.1/2 | imgs 0 | stock True | 345
+    - 02608032 | TORNILLO H° TANQUE ZINCADO 5/16X1.1/4 | imgs 0 | stock True | 304
+    - 02608025 | TORNILLO H° TANQUE ZINCADO 5/16X1&#8243; | imgs 0 | stock True | 263
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=tornillo&per_page=50
 BUSCAR tirafondo:
+  https://clabutor.com.ar: 50 resultados
+    - 01810175 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X7 | imgs 0 | stock True | 1215
+    - 01810150 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X6 | imgs 0 | stock True | 1047
+    - 01810140 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X5.1/2 | imgs 0 | stock True | 965
+    - 01810125 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X5 | imgs 0 | stock True | 888
+    - 01810110 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X4.1/2 | imgs 0 | stock True | 797
+    - 01810100 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X4 | imgs 0 | stock True | 718
+    - 01810090 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X3.1/2 | imgs 0 | stock True | 627
+    - 01810082 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X3.1/4 | imgs 0 | stock True | 596
+    - 01810076 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X3 | imgs 0 | stock True | 560
+    - 01810070 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X2.3/4 | imgs 0 | stock True | 513
+    - 01810063 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X2.1/2 | imgs 0 | stock True | 479
+    - 01810057 | TIRAFONDO HEXAGONAL ZINCADO 3/8 X2.1/4 | imgs 0 | stock True | 438
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=tirafondo&per_page=50
