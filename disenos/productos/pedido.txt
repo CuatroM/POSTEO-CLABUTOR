@@ -1,6 +1,7 @@
-# Un SKU por línea. "SKU | drive" busca directo en Drive.
-69359811 | drive
-69359918 | drive
-69359805 | drive
-69359806 | drive
-69359687 | drive
+# BUSCAR | término trae los primeros resultados de clabutor.com.ar
+BUSCAR | bulon
+BUSCAR | tuerca
+BUSCAR | arandela
+BUSCAR | varilla roscada
+BUSCAR | tornillo
+BUSCAR | tirafondo

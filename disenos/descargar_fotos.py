@@ -264,6 +264,32 @@ def main():
                 sku, _, q = linea.partition("|")
                 pedido.append((sku.strip(), q.strip()))
     faltan = []
+    # Líneas "BUSCAR | término": baja las fotos de los primeros resultados de clabutor.com.ar
+    # (sin conocer el SKU), guardadas con su SKU, y deja nombre y SKU en el log.
+    busquedas = [q for sku, q in pedido if sku.upper() == "BUSCAR"]
+    pedido = [(sku, q) for sku, q in pedido if sku.upper() != "BUSCAR"]
+    for termino in busquedas:
+        print(f"BUSCAR {termino}:")
+        try:
+            res = buscar(SITIOS[0], termino)
+        except Exception as ex:  # noqa: BLE001
+            print(f"  error {ex}")
+            continue
+        for prod in res[:6]:
+            imgs = prod.get("images") or []
+            sku_p = (prod.get("sku") or "").strip()
+            if not imgs or not sku_p:
+                continue
+            url = imgs[0]["src"]
+            ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
+            try:
+                img = requests.get(url, headers=UA, timeout=60)
+                img.raise_for_status()
+            except Exception:  # noqa: BLE001
+                continue
+            seguro = re.sub(r"[^A-Za-z0-9._-]", "_", sku_p)
+            (PRODUCTOS / f"{seguro}{ext}").write_bytes(img.content)
+            print(f"  OK {seguro}{ext} | {prod['name']}")
     for sku, q in pedido:
         print(f"{sku}:")
         hallado = encontrar(sku, q)
