@@ -133,9 +133,12 @@ Para <b style="color:{NEGRO}">fábricas, metalúrgicas, constructoras,<br>taller
 <p class="bajada" style="font-size:40px">Mandanos tu <b>listado de medidas y cantidades,</b> y te respondemos con la cotización.</p>
 <div style="display:flex;gap:30px;align-items:flex-start;margin-top:26px">
   <div style="flex:1">
-    <div style="font-family:Titular;font-weight:900;font-size:42px;margin-bottom:12px">Escribinos por WhatsApp</div>
-    {sede("CASA CENTRAL", "351 227 2419", "Domingo F. Sarmiento 365 - Córdoba")}
-    {sede("SUCURSAL", "351 227 2420", "Blvd. de los Alemanes 5310 - Córdoba")}
+    <div style="font-family:Titular;font-weight:900;font-size:42px">Escribinos por WhatsApp</div>
+    <div style="display:flex;align-items:center;gap:18px;margin-top:14px">{wa(70)}<span style="font-family:Titular;font-weight:900;font-size:88px;letter-spacing:-2px;color:{ROJO}">351 227 2419</span></div>
+    <div style="margin-top:22px;border-top:3px solid #E4E4E4">
+      <div style="padding:14px 0;border-bottom:3px solid #E4E4E4"><span style="font-weight:700;font-size:24px;letter-spacing:3px;color:#777">CASA CENTRAL</span><br><span style="font-weight:600;font-size:32px">Domingo F. Sarmiento 365 - Córdoba</span></div>
+      <div style="padding:14px 0"><span style="font-weight:700;font-size:24px;letter-spacing:3px;color:#777">SUCURSAL</span><br><span style="font-weight:600;font-size:32px">Blvd. de los Alemanes 5310 - Córdoba</span></div>
+    </div>
   </div>
 </div>
 <div style="position:absolute;left:0;right:0;bottom:180px;display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:3px solid #E4E4E4">{bulon(250)}{tuerca(100)}{arandela(90)}{foto("15108032TELEST", "height:130px")}{foto("104070008", "width:170px")}</div>

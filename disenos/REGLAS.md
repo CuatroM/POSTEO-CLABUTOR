@@ -39,9 +39,10 @@
   Historias **informativas**: con barras, contando solo las informativas del set.
 
 ## Contacto (WhatsApp)
-- Siempre los dos números, sin guiones y separados por espacios, con la dirección si hay lugar:
-  - Casa central: 351 227 2419 · Domingo F. Sarmiento 365 - Córdoba
-  - Sucursal: 351 227 2420 · Blvd. de los Alemanes 5310 - Córdoba
+- Un solo WhatsApp en redes y copy: **351 227 2419** (es donde atienden), sin guiones y separado por espacios.
+- La sucursal se menciona solo con la ubicación (sin número):
+  - Casa central: Domingo F. Sarmiento 365 - Córdoba
+  - Sucursal: Blvd. de los Alemanes 5310 - Córdoba
 - En las placas, el producto tiene prioridad de tamaño sobre el bloque de contacto.
 
 ## Precios (productos FEMA con envío gratis)
