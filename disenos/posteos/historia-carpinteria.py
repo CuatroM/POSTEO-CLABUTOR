@@ -130,6 +130,5 @@ def placas(g):
     <div style="padding:12px 0"><span style="font-weight:700;font-size:22px;letter-spacing:3px;color:#777">SUCURSAL</span><br><span style="font-weight:600;font-size:30px">Blvd. de los Alemanes 5310 - Córdoba</span></div>
   </div>
 </div>
-<div style="position:absolute;left:0;right:0;bottom:0;height:400px;overflow:hidden"><img src="../../fotos/tornillos-b.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block"></div>
 '''
     return [("blanca colores-marca", p) for p in (p1, p2, p3, p4a, p4b, p4c, p5)]
