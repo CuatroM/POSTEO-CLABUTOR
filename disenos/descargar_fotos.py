@@ -271,24 +271,29 @@ def main():
     for termino in busquedas:
         print(f"BUSCAR {termino}:")
         res = []
-        # femacba no tiene Store API: búsqueda HTML de WordPress (?s=...&post_type=product)
+        # femacba (TiendaQuick): búsqueda ?s= y título/foto de las primeras páginas de producto
         try:
-            html = requests.get(f"{SITIOS[1]}/", params={"s": termino, "post_type": "product"}, headers=UA, timeout=40).text
-            tarjetas = re.findall(r'<li[^>]*class="[^"]*product[^"]*"[^>]*>(.*?)</li>', html, re.S)
-            print(f"  femacba html: {len(tarjetas)} tarjetas")
-            for t in tarjetas[:12]:
-                titulo = re.search(r'<h2[^>]*>(.*?)</h2>', t, re.S)
-                img = re.search(r'<img[^>]+(?:data-src|src)="([^"]+)"', t)
-                sku_m = re.search(r'data-product_sku="([^"]*)"', t)
-                nombre = re.sub(r"<[^>]+>", "", titulo.group(1)).strip() if titulo else "?"
-                stock = "sin stock" if "outofstock" in t else "stock"
-                print(f"    - {sku_m.group(1) if sku_m else '?'} | {nombre} | {stock} | {img.group(1) if img else '-'}")
-                if img and sku_m and sku_m.group(1) and "outofstock" not in t:
-                    res.append({"sku": sku_m.group(1), "name": nombre, "images": [{"src": img.group(1)}]})
-            if not tarjetas:
-                print("    html:", re.sub(r"\s+", " ", html[html.find("<main"):][:600]))
+            html = _get(f"https://www.femacba.com.ar/?s={requests.utils.quote(termino)}")
+            links = []
+            for href in re.findall(r'href=["\']([^"\'#]+)', html):
+                href = _abs(href)
+                if "femacba.com.ar" in href and href.count("/") >= 4 and "?" not in href and href not in links \
+                        and href not in PAGINAS_HTML:
+                    links.append(href)
+            palabras = [norm(w)[:6] for w in termino.split() if len(w) >= 4]
+            links = [h for h in links if any(w in norm(h) for w in palabras)]
+            print(f"  femacba: {len(links)} links")
+            for h in links[:15]:
+                try:
+                    pag = _get(h)
+                except Exception:  # noqa: BLE001
+                    continue
+                t = re.search(r"<title>(.*?)</title>", pag, re.S)
+                img = _og_image(pag)
+                sinst = bool(re.search(r"sin stock|agotado|sin existencia", pag, re.I))
+                print(f"    F {h} | {t.group(1).strip()[:90] if t else '?'} | img {bool(img)} | sin stock {sinst}")
         except Exception as ex:  # noqa: BLE001
-            print(f"  femacba html: error {ex}")
+            print(f"  femacba: error {ex}")
         for sitio in SITIOS[:1]:
             try:
                 r = buscar(sitio, termino)
@@ -296,7 +301,7 @@ def main():
                 print(f"  {sitio}: error {ex}")
                 continue
             print(f"  {sitio}: {len(r)} resultados")
-            for prod in r[:12]:
+            for prod in [x for x in r if x.get("images")][:20]:
                 print(f"    - {prod.get('sku') or '?'} | {prod.get('name')} | imgs {len(prod.get('images') or [])}"
                       f" | stock {prod.get('is_in_stock')} | {(prod.get('prices') or {}).get('price')}")
             res += r
