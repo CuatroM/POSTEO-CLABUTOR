@@ -1,199 +1,38 @@
-BUSCAR bulon:
-  femacba: 0 links
-  https://clabutor.com.ar: 50 resultados
-BUSCAR tuerca:
-  femacba: 0 links
-  https://clabutor.com.ar: 50 resultados
-BUSCAR arandela:
-  femacba: 0 links
-  https://clabutor.com.ar: 50 resultados
-BUSCAR varilla:
-  femacba: 0 links
-  https://clabutor.com.ar: 50 resultados
-BUSCAR tornillo madera:
-  femacba: 1 links
-    F https://www.femacba.com.ar/herramientas-manuales/destornilladores-rucci | Destornilladores Rucci | img True | sin stock True
-  https://clabutor.com.ar: 0 resultados
-BUSCAR tirafondo:
-  femacba: 0 links
-  https://clabutor.com.ar: 50 resultados
-BUSCAR tarugo:
-  femacba: 0 links
-  https://clabutor.com.ar: 3 resultados
-BUSCAR clavo:
-  femacba: 1 links
-    F https://www.femacba.com.ar/construccion/clavos | Clavos | img True | sin stock True
-  https://clabutor.com.ar: 15 resultados
-BUSCAR sierra circular:
-  femacba: 2 links
-    F https://www.femacba.com.ar/jardineria/motosierras-y-electrosierras | Motosierras y electrosierras | img True | sin stock True
-    F https://www.femacba.com.ar/repuestos/motosierras | Motosierras | img True | sin stock True
-  https://clabutor.com.ar: 5 resultados
-    - 2682-259A | Sierra Circular para Metales a Batería de 18v Milwaukee | imgs 9 | stock True | 1476971
-    - 7821 | Sierra Circular con Dientes de Widia 230mm 48 dientes Bremen | imgs 4 | stock True | 49787
-    - CSL1500-8 | Sierra Circular 1500w 185mm Lüsqtoff | imgs 8 | stock True | 241600
-  OK 2682-259A.jpg | Sierra Circular para Metales a Batería de 18v Milwaukee
-  OK 7821.jpg | Sierra Circular con Dientes de Widia 230mm 48 dientes Bremen
-  OK CSL1500-8.jpg | Sierra Circular 1500w 185mm Lüsqtoff
-BUSCAR ingletadora:
-  femacba: 0 links
-  https://clabutor.com.ar: 0 resultados
-BUSCAR lijadora:
-  femacba: 0 links
-  https://clabutor.com.ar: 1 resultados
-    - BR318-AR | Lijadora de Banda 680w Black+Decker | imgs 1 | stock True | 371887
-  OK BR318-AR.jpg | Lijadora de Banda 680w Black+Decker
-BUSCAR caladora:
-  femacba: 0 links
-  https://clabutor.com.ar: 32 resultados
-    - G19532AC | Juego de Hojas para Sierra Caladora 18 Piezas Gamma | imgs 5 | stock True | 49030
-  OK G19532AC.jpg | Juego de Hojas para Sierra Caladora 18 Piezas Gamma
-BUSCAR taladro:
-  femacba: 1 links
-    F https://www.femacba.com.ar/construccion/mototaladro-rotomartillo | Mototaladro - Rotomartillo | img True | sin stock True
-  https://clabutor.com.ar: 32 resultados
-    - 3037 | Taladro Neumático Reversible Bremen | imgs 5 | stock True | 151304
-    - G2320AR | Taladro de Banco 3-13mm Gamma | imgs 5 | stock True | 234411
-    - DWD014-AR | Taladro de Rotación 600w Dewalt | imgs 8 | stock True | 250708
-    - HD400-AR | Taladro Percutor 550w Black + Decker | imgs 9 | stock True | 128471
-    - STL60-8 | Soporte para Taladro Lüsqtoff | imgs 6 | stock True | 74338
-    - G1904KAR | TALADRO DE IMPACTO PERCUTOR 710W 2900RPM EN KIT &#8211; GAMMA | imgs 7 | stock True | 131386
-    - 3201 | Colector de Polvo para Taladro Proper | imgs 6 | stock True | 1525
-  OK 3037.jpg | Taladro Neumático Reversible Bremen
-  OK G2320AR.jpg | Taladro de Banco 3-13mm Gamma
-BUSCAR atornillador:
-  femacba: 0 links
-  https://clabutor.com.ar: 32 resultados
-    - G19525AC | Juego de Puntas para Atornillador 40 Piezas Gamma | imgs 5 | stock True | 34609
-    - HP12-AR | Atornillador Percutor 12v 10mm Black+Decker | imgs 6 | stock True | 236479
-    - G19519AC | Juego de Puntas para Atornillador 15 Piezas Gamma | imgs 5 | stock True | 17305
-    - G19518AC | Juego de Puntas para Atornillador 14 Piezas Gamma | imgs 4 | stock True | 17305
-    - DW255-AR | Atornillador para Drywall 540w Dewalt | imgs 5 | stock True | 549382
-    - DC845KA-AR | ATORNILLADOR IMPACTO 12V HEX 1/4 2BAT. | imgs 6 | stock True | 114009
-  OK G19525AC.jpg | Juego de Puntas para Atornillador 40 Piezas Gamma
-  OK HP12-AR.jpg | Atornillador Percutor 12v 10mm Black+Decker
-BUSCAR clavadora:
-  femacba: 0 links
-  https://clabutor.com.ar: 0 resultados
-06011B60H0-000:
-  https://clabutor.com.ar '06011B60H0-000': 0 resultados, ninguno con SKU 06011B60H0-000 ()
-  https://clabutor.com.ar 'taladro percutor bosch gsb 550': 0 resultados, ninguno con SKU 06011B60H0-000 ()
-  https://femacba.com.ar '06011B60H0-000': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=06011B60H0-000&per_page=50
-  https://femacba.com.ar 'taladro percutor bosch gsb 550': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=taladro+percutor+bosch+gsb+550&per_page=50
-  https://www.femacba.com.ar/?s=06011B60H0-000: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=taladro%20percutor%20bosch%20gsb%20550: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
-  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
+69330110:
   Drive: 2828 archivos en la carpeta de fotos
-  Drive: no hay foto para 06011B60H0-000
+  Drive: candidatos ['69330110.jpg']
+  Drive: 69330110.jpg
+  OK 69330110.jpg (drive) -> 69330110.jpg [102 KB]
+69330114:
+  Drive: candidatos ['69330114.jpg']
+  Drive: 69330114.jpg
+  OK 69330114.jpg (drive) -> 69330114.jpg [95 KB]
+69330132:
+  Drive: candidatos ['69330132.jpg']
+  Drive: 69330132.jpg
+  OK 69330132.jpg (drive) -> 69330132.jpg [70 KB]
+69370206:
+  Drive: candidatos ['69370206.jpg']
+  Drive: 69370206.jpg
+  OK 69370206.jpg (drive) -> 69370206.jpg [240 KB]
+69370208:
+  Drive: candidatos ['69370208-10.jpg', '69370208-5.jpg', '69370208-5_02.jpg', '69370208-V-SIL-MA.jpeg', '69370208.jpg', '69370208_02.jpg', '69370208_03.jpg', '69370208_03.png']
+  Drive: 69370208.jpg
+  OK 69370208.jpg (drive) -> 69370208.jpg [502 KB]
+69370100:
+  Drive: candidatos ['69370100.jpg']
+  Drive: 69370100.jpg
+  OK 69370100.jpg (drive) -> 69370100.jpg [584 KB]
+69501330:
+  Drive: no hay foto para 69501330
+  Drive: nombres parecidos: 69501308.JPG, 69501308.png, 69501390.jpg
   NO ENCONTRADO
-06019K91E6-000:
-  https://clabutor.com.ar '06019K91E6-000': 0 resultados, ninguno con SKU 06019K91E6-000 ()
-  https://clabutor.com.ar 'taladro atornillador bosch gsb 183': 0 resultados, ninguno con SKU 06019K91E6-000 ()
-  https://femacba.com.ar '06019K91E6-000': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=06019K91E6-000&per_page=50
-  https://femacba.com.ar 'taladro atornillador bosch gsb 183': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=taladro+atornillador+bosch+gsb+183&per_page=50
-  https://www.femacba.com.ar/?s=06019K91E6-000: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=taladro%20atornillador%20bosch%20gsb%20183: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
-  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  Drive: no hay foto para 06019K91E6-000
+69501365:
+  Drive: no hay foto para 69501365
+  Drive: nombres parecidos: 69501308.JPG, 69501308.png, 69501390.jpg
   NO ENCONTRADO
-06014470H0-000:
-  https://clabutor.com.ar '06014470H0-000': 0 resultados, ninguno con SKU 06014470H0-000 ()
-  https://clabutor.com.ar 'atornillador bosch gsr 7-14': 0 resultados, ninguno con SKU 06014470H0-000 ()
-  https://femacba.com.ar '06014470H0-000': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=06014470H0-000&per_page=50
-  https://femacba.com.ar 'atornillador bosch gsr 7-14': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=atornillador+bosch+gsr+7-14&per_page=50
-  https://www.femacba.com.ar/?s=06014470H0-000: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=atornillador%20bosch%20gsr%207-14: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
-  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  Drive: no hay foto para 06014470H0-000
+69501340:
+  Drive: no hay foto para 69501340
+  Drive: nombres parecidos: 69501308.JPG, 69501308.png, 69501390.jpg
   NO ENCONTRADO
-06015B41H0-000:
-  https://clabutor.com.ar '06015B41H0-000': 0 resultados, ninguno con SKU 06015B41H0-000 ()
-  https://clabutor.com.ar 'sierra caladora bosch gst 750': 0 resultados, ninguno con SKU 06015B41H0-000 ()
-  https://femacba.com.ar '06015B41H0-000': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=06015B41H0-000&per_page=50
-  https://femacba.com.ar 'sierra caladora bosch gst 750': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=sierra+caladora+bosch+gst+750&per_page=50
-  https://www.femacba.com.ar/?s=06015B41H0-000: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=sierra%20caladora%20bosch%20gst%20750: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
-  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  Drive: no hay foto para 06015B41H0-000
-  NO ENCONTRADO
-69607627:
-  https://clabutor.com.ar '69607627': 0 resultados, ninguno con SKU 69607627 ()
-  https://clabutor.com.ar 'taladro martillo ducati 20v': 0 resultados, ninguno con SKU 69607627 ()
-  https://femacba.com.ar '69607627': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=69607627&per_page=50
-  https://femacba.com.ar 'taladro martillo ducati 20v': error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=taladro+martillo+ducati+20v&per_page=50
-  https://www.femacba.com.ar/?s=69607627: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/?s=taladro%20martillo%20ducati%2020v: 179 links; SKU en la página: False
-  https://www.femacba.com.ar/construccion/hormigoneras-carretillas-baldes: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/motores/motores-a-explosion: 189 links; SKU en la página: False
-  https://www.femacba.com.ar/electrobombas/electrobombas-centrifugas-y-perifericas: 187 links; SKU en la página: False
-  https://www.femacba.com.ar/jardineria/canos-mangueras-de-riego: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/listado-productos.htm: 182 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?pagina=5: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=2: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=3: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=4: 191 links; SKU en la página: False
-  https://www.femacba.com.ar/compresores/compresores-1?p=5: 191 links; SKU en la página: False
-  Drive: no hay foto para 69607627
-  NO ENCONTRADO
-Sin foto: 06011B60H0-000, 06019K91E6-000, 06014470H0-000, 06015B41H0-000, 69607627
+Sin foto: 69501330, 69501365, 69501340
