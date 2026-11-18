@@ -1,41 +1,70 @@
-06011B60H0-000:
+BUSCAR bosch:
+  https://clabutor.com.ar: 3 resultados
+    - GWS700KIT | Amoladora Angular Bosch GWS 700 + Kit 5 Discos | imgs 6 | stock True | 152769
+    - 2608619787 | DISCO CORTE INOX.PLANO BOSCH.230X1.9MM | imgs 0 | stock True | 5454
+    - GLL2-12 | Nivel Láser de Líneas Rojas Bosch | imgs 10 | stock True | 407270
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=bosch&per_page=50
+  OK GWS700KIT.png | Amoladora Angular Bosch GWS 700 + Kit 5 Discos
+  OK GLL2-12.jpg | Nivel Láser de Líneas Rojas Bosch
+BUSCAR ducati:
+  https://clabutor.com.ar: 0 resultados
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=ducati&per_page=50
+BUSCAR percutor:
+  https://clabutor.com.ar: 8 resultados
+    - CIDLI201452-4 | TALADRO PERCUTOR 20V 45NM 10MM C/MALETIN | imgs 0 | stock True | 256041
+    - D25481K-AR* | ROTOPERCUTOR &#8211; EMBRAGUE SEG &#8211; 5KGS (TRANSM.CADENA) | imgs 0 | stock True | 1860651
+    - HP12-AR | Atornillador Percutor 12v 10mm Black+Decker | imgs 6 | stock True | 236479
+    - TP555K-AR | TALADRO C/PERCUTOR 550W VVR 10MM C/MALETÍN | imgs 0 | stock True | 127493
+    - HD400-AR | Taladro Percutor 550w Black + Decker | imgs 9 | stock True | 128471
+    - MHEBTX500 | TALADRO C/PERCUTOR 500W | imgs 0 | stock True | 0
+    - MHEBTX450 | TALADRO C/PERCUTOR 450W | imgs 0 | stock True | 0
+    - G1904KAR | TALADRO DE IMPACTO PERCUTOR 710W 2900RPM EN KIT &#8211; GAMMA | imgs 7 | stock True | 131386
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=percutor&per_page=50
+  OK HP12-AR.jpg | Atornillador Percutor 12v 10mm Black+Decker
+  OK HD400-AR.jpg | Taladro Percutor 550w Black + Decker
+BUSCAR ingleteadora:
+  https://clabutor.com.ar: 0 resultados
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=ingleteadora&per_page=50
+BUSCAR lijadora orbital:
+  https://clabutor.com.ar: 0 resultados
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=lijadora+orbital&per_page=50
+BUSCAR fresadora:
+  https://clabutor.com.ar: 1 resultados
+    - FRL1400-9 | Fresadora 1400w Lüsqtoff | imgs 5 | stock True | 315939
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=fresadora&per_page=50
+  OK FRL1400-9.jpg | Fresadora 1400w Lüsqtoff
+BUSCAR tornillo fix:
+  https://clabutor.com.ar: 25 resultados
+    - 24706090 | TORNILLO FIXER P/MADERA DORADO 6 X 90 | imgs 0 | stock True | 128
+    - 24706080 | TORNILLO FIXER P/MADERA DORADO 6 X 80 | imgs 0 | stock True | 114
+    - 24706070 | TORNILLO FIXER P/MADERA DORADO 6 X 70 | imgs 0 | stock True | 101
+    - 24705070CB | TORNILLO FIXER P/MADERA DORADO 5X70X60 | imgs 0 | stock True | 62
+    - 24705090 | TORNILLO FIXER P/MADERA DORADO 5 X 90 | imgs 0 | stock True | 90
+    - 24705080 | TORNILLO FIXER P/MADERA DORADO 5 X 80 | imgs 0 | stock True | 78
+    - 24705060 | TORNILLO FIXER P/MADERA DORADO 5 X 60 | imgs 0 | stock True | 59
+    - 24705055 | TORNILLO FIXER P/MADERA DORADO 5 X 55 | imgs 0 | stock True | 55
+    - 24705050 | TORNILLO FIXER P/MADERA DORADO 5 X 50 | imgs 0 | stock True | 50
+    - 24705045 | TORNILLO FIXER P/MADERA DORADO 5 X 45 | imgs 0 | stock True | 45
+    - 24705040 | TORNILLO FIXER P/MADERA DORADO 5 X 40 | imgs 0 | stock True | 40
+    - 24705030 | TORNILLO FIXER P/MADERA DORADO 5 X 30 | imgs 0 | stock True | 32
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=tornillo+fix&per_page=50
+BUSCAR grampas:
+  https://clabutor.com.ar: 0 resultados
+  https://femacba.com.ar: error 410 Client Error: Gone for url: https://femacba.com.ar/wp-json/wc/store/v1/products?search=grampas&per_page=50
+06011B60H0:
   Drive: 2828 archivos en la carpeta de fotos
-  Drive: no hay foto para 06011B60H0-000
+  Drive: no hay foto para 06011B60H0
   NO ENCONTRADO
-06015B41H0-000:
-  Drive: no hay foto para 06015B41H0-000
+06015B41H0:
+  Drive: no hay foto para 06015B41H0
   NO ENCONTRADO
-060158H0H0-000:
-  Drive: no hay foto para 060158H0H0-000
+060158H0H0:
+  Drive: no hay foto para 060158H0H0
   NO ENCONTRADO
-06014470H0-000:
-  Drive: no hay foto para 06014470H0-000
+06019K91E6:
+  Drive: no hay foto para 06019K91E6
   NO ENCONTRADO
-06019K91E6-000:
-  Drive: no hay foto para 06019K91E6-000
+06014470H0:
+  Drive: no hay foto para 06014470H0
   NO ENCONTRADO
-69607627:
-  Drive: no hay foto para 69607627
-  NO ENCONTRADO
-69607600:
-  Drive: no hay foto para 69607600
-  NO ENCONTRADO
-800050:
-  Drive: candidatos ['800050.jpg']
-  Drive: 800050.jpg
-  OK 800050.jpg (drive) -> 800050.jpg [94 KB]
-800040:
-  Drive: candidatos ['800040.jpg']
-  Drive: 800040.jpg
-  OK 800040.jpg (drive) -> 800040.jpg [92 KB]
-800046:
-  Drive: candidatos ['800046.png']
-  Drive: 800046.png
-  OK 800046.png (drive) -> 800046.png [842 KB]
-80036030:
-  Drive: no hay foto para 80036030
-  NO ENCONTRADO
-69570125:
-  Drive: no hay foto para 69570125
-  NO ENCONTRADO
-Sin foto: 06011B60H0-000, 06015B41H0-000, 060158H0H0-000, 06014470H0-000, 06019K91E6-000, 69607627, 69607600, 80036030, 69570125
+Sin foto: 06011B60H0, 06015B41H0, 060158H0H0, 06019K91E6, 06014470H0
