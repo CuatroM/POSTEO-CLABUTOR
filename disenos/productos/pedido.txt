@@ -1,12 +1,12 @@
-BUSCAR | sierra circular
-BUSCAR | ingletadora
-BUSCAR | taladro
-BUSCAR | atornillador
-BUSCAR | caladora
-BUSCAR | lijadora
-BUSCAR | router
-BUSCAR | clavadora
-BUSCAR | tornillo madera
-BUSCAR | tarugo
-BUSCAR | grampa
-BUSCAR | clavo
+06011B60H0-000 | drive
+06015B41H0-000 | drive
+060158H0H0-000 | drive
+06014470H0-000 | drive
+06019K91E6-000 | drive
+69607627 | drive
+69607600 | drive
+800050 | drive
+800040 | drive
+800046 | drive
+80036030 | drive
+69570125 | drive
