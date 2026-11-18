@@ -1,8 +1,12 @@
-01412100 | drive
-02217016 | drive
-00009012 | drive
-07216010 | drive
-01810100 | drive
-02608050 | drive
-04112050 | drive
-01225100NF | drive
+BUSCAR | sierra circular
+BUSCAR | ingletadora
+BUSCAR | taladro
+BUSCAR | atornillador
+BUSCAR | caladora
+BUSCAR | lijadora
+BUSCAR | router
+BUSCAR | clavadora
+BUSCAR | tornillo madera
+BUSCAR | tarugo
+BUSCAR | grampa
+BUSCAR | clavo
