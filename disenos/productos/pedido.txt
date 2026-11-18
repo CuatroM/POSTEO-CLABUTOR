@@ -1,20 +1,9 @@
-BUSCAR | bulon
-BUSCAR | tuerca
-BUSCAR | arandela
-BUSCAR | varilla
-BUSCAR | tornillo madera
-BUSCAR | tirafondo
-BUSCAR | tarugo
-BUSCAR | clavo
-BUSCAR | sierra circular
-BUSCAR | ingletadora
-BUSCAR | lijadora
-BUSCAR | caladora
-BUSCAR | taladro
-BUSCAR | atornillador
-BUSCAR | clavadora
-06011B60H0-000 | taladro percutor bosch gsb 550
-06019K91E6-000 | taladro atornillador bosch gsb 183
-06014470H0-000 | atornillador bosch gsr 7-14
-06015B41H0-000 | sierra caladora bosch gst 750
-69607627 | taladro martillo ducati 20v
+69330110 | drive
+69330114 | drive
+69330132 | drive
+69370206 | drive
+69370208 | drive
+69370100 | drive
+69501330 | drive
+69501365 | drive
+69501340 | drive
