@@ -271,7 +271,25 @@ def main():
     for termino in busquedas:
         print(f"BUSCAR {termino}:")
         res = []
-        for sitio in SITIOS:
+        # femacba no tiene Store API: búsqueda HTML de WordPress (?s=...&post_type=product)
+        try:
+            html = requests.get(f"{SITIOS[1]}/", params={"s": termino, "post_type": "product"}, headers=UA, timeout=40).text
+            tarjetas = re.findall(r'<li[^>]*class="[^"]*product[^"]*"[^>]*>(.*?)</li>', html, re.S)
+            print(f"  femacba html: {len(tarjetas)} tarjetas")
+            for t in tarjetas[:12]:
+                titulo = re.search(r'<h2[^>]*>(.*?)</h2>', t, re.S)
+                img = re.search(r'<img[^>]+(?:data-src|src)="([^"]+)"', t)
+                sku_m = re.search(r'data-product_sku="([^"]*)"', t)
+                nombre = re.sub(r"<[^>]+>", "", titulo.group(1)).strip() if titulo else "?"
+                stock = "sin stock" if "outofstock" in t else "stock"
+                print(f"    - {sku_m.group(1) if sku_m else '?'} | {nombre} | {stock} | {img.group(1) if img else '-'}")
+                if img and sku_m and sku_m.group(1) and "outofstock" not in t:
+                    res.append({"sku": sku_m.group(1), "name": nombre, "images": [{"src": img.group(1)}]})
+            if not tarjetas:
+                print("    html:", re.sub(r"\s+", " ", html[html.find("<main"):][:600]))
+        except Exception as ex:  # noqa: BLE001
+            print(f"  femacba html: error {ex}")
+        for sitio in SITIOS[:1]:
             try:
                 r = buscar(sitio, termino)
             except Exception as ex:  # noqa: BLE001
@@ -282,7 +300,7 @@ def main():
                 print(f"    - {prod.get('sku') or '?'} | {prod.get('name')} | imgs {len(prod.get('images') or [])}"
                       f" | stock {prod.get('is_in_stock')} | {(prod.get('prices') or {}).get('price')}")
             res += r
-        for prod in res[:6]:
+        for prod in res[:10]:
             imgs = prod.get("images") or []
             sku_p = (prod.get("sku") or "").strip()
             if not imgs or not sku_p:

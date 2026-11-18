@@ -1,13 +1,16 @@
-BUSCAR | bosch
-BUSCAR | ducati
-BUSCAR | percutor
-BUSCAR | ingleteadora
-BUSCAR | lijadora orbital
-BUSCAR | fresadora
-BUSCAR | tornillo fix
-BUSCAR | grampas
-06011B60H0 | drive
-06015B41H0 | drive
-060158H0H0 | drive
-06019K91E6 | drive
-06014470H0 | drive
+BUSCAR | bulon
+BUSCAR | tuerca
+BUSCAR | arandela
+BUSCAR | varilla
+BUSCAR | tornillo
+BUSCAR | tirafondo
+BUSCAR | tarugo
+BUSCAR | clavo
+BUSCAR | sierra circular
+BUSCAR | ingletadora
+BUSCAR | taladro
+BUSCAR | atornillador
+BUSCAR | caladora
+BUSCAR | lijadora
+BUSCAR | compresor
+BUSCAR | clavadora
