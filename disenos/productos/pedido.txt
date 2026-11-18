@@ -1,7 +1,4 @@
-06011B60H0-000 | https://www.bosch-professional.com/ar/es/products/gsb-550-06011B60H0
-06019K91E6-000 | https://www.bosch-professional.com/ar/es/products/gsb-183-li-06019K91E6
-06015B41H0-000 | https://www.bosch-professional.com/ar/es/products/gst-750-06015B41H0
-06014470H0-000 | https://www.bosch-professional.com/ar/es/products/gsr-7-14-e-06014470H0
-06112673H0-000 | https://www.bosch-professional.com/ar/es/products/gbh-2-28-d-06112673H0
-06011B50H0-000 | https://www.bosch-professional.com/ar/es/products/gsb-450-re-06011B50H0
-060158H0H0-000 | https://www.bosch-professional.com/ar/es/products/gst-75-e-060158H0H0
+14614050PC | autoperforante tel madera
+14706025TEL | autoperforante tel dry punta aguja
+14110025TELEST | autoperforante tel dry punta mecha
+104070006 | taco fischer sx 6
