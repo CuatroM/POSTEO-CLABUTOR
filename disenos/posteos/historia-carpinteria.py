@@ -6,7 +6,7 @@ Productos con foto real y stock:
   (69370100), clavadora neumática DUCA (800050), engrampadora neumática DUCA (800040)
 Historia 4 (sin repetir productos de las otras): Bosch GSB 183-LI, GBH 2-28 D, GSR 7-14 E, GST 75 E y GSB 450 RE
 (fotos de bosch-professional.com/ar), compresor DUCA a correa 180 L (69370029), clavadora de bobina DUCA (800060),
-engrampadora DUCA (800416), martillo bolita y destornillador Vanguard. Sin sierras circulares, ingletadoras ni lijadoras
+engrampadora DUCA (800416), separados en 3 historias con nombre y características. Sin sierras circulares, ingletadoras ni lijadoras
 (FEMA no las tiene con stock).
 Historia 3: los bulones de clabutor.com.ar no tienen foto -> va la foto del taller, sin productos."""
 
@@ -66,25 +66,56 @@ def placas(g):
 {ambiente("taller-b.jpg", 700, "center")}
 '''
 
-    p4 = f'''
-<div class="pildora"><i></i>HERRAMIENTAS</div>
+    def ficha(sku, nombre, rasgos, alto, costo):
+        precio = "$" + f"{g.precio_envio_gratis(costo):,}".replace(",", ".")
+        return (f'<div style="display:flex;align-items:center;gap:26px;height:{alto}px;border-bottom:3px solid #E4E4E4">'
+                f'<div style="width:400px;height:{alto-30}px;display:flex;align-items:center;justify-content:center;flex:none">'
+                f'{foto(sku, "max-width:100%;max-height:100%")}</div>'
+                f'<div><div style="font-family:Titular;font-weight:900;font-size:38px;line-height:1.05;letter-spacing:-.5px">{nombre}</div>'
+                f'<div style="font-weight:600;font-size:26px;line-height:1.25;color:#555;margin-top:8px">{rasgos}</div>'
+                f'<div style="font-family:Titular;font-weight:900;font-size:58px;letter-spacing:-2px;line-height:1;color:{ROJO};margin-top:10px">{precio}</div></div></div>')
+
+    garantia = f'''<div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:22px;background:{ROJO};color:#fff;padding:12px 30px">
+  <span style="font-family:Titular;font-weight:900;font-size:80px;line-height:.85;letter-spacing:-3px">6</span>
+  <span style="font-family:Titular;font-weight:900;font-size:40px;line-height:1">meses de garantía</span>
+</div>'''
+
+    p4a = g.MARCA_PRODUCTO + f'''
+<div class="pildora"><i></i>TALADROS</div>
 <h1 style="font-size:82px;margin-top:26px;white-space:nowrap">Herramientas FEMA<br><em>para el taller</em></h1>
-<p class="bajada" style="font-size:36px"><b>Taladros, perforadoras, atornilladores, caladoras,</b> compresores, clavadoras neumáticas y herramientas manuales.</p>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,215px);gap:14px;margin-top:30px">
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06019K91E6-000", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06112673H0-000", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06014470H0-000", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("060158H0H0-000", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06011B50H0-000", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("69370029", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("800060", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("800416", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("69411150", "max-height:100%;max-width:55%")}{foto("69435565", "max-height:100%;max-width:40%")}</div>
+<p class="bajada" style="font-size:36px"><b>Taladros y perforadoras</b> para cada trabajo.</p>
+<div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
+<div style="margin-top:10px">
+{ficha("06019K91E6-000", "Taladro atornillador<br>Bosch GSB 183-LI", "Inalámbrico 18 V, con percusión<br>y mandril de 13 mm", 232, 227018.39)}
+{ficha("06112673H0-000", "Martillo perforador<br>Bosch GBH 2-28 D", "850 W, encastre SDS plus<br>y 3,2 J de impacto", 232, 503283.41)}
+{ficha("06011B50H0-000", "Taladro percutor<br>Bosch GSB 450 RE", "450 W, reversible<br>y mandril de 10 mm", 232, 101766.08)}
 </div>
-<div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:26px;background:{ROJO};color:#fff;padding:22px 34px">
-  <span style="font-family:Titular;font-weight:900;font-size:104px;line-height:.85;letter-spacing:-4px">6</span>
-  <span style="font-family:Titular;font-weight:900;font-size:46px;line-height:1.05">meses de<br>garantía</span>
+{garantia}
+'''
+
+    p4b = g.MARCA_PRODUCTO + f'''
+<div class="pildora"><i></i>HERRAMIENTAS FEMA</div>
+<h1 style="font-size:88px;margin-top:26px;white-space:nowrap">Atornilladores<br><em>y caladoras</em></h1>
+<p class="bajada" style="font-size:36px">Para armar muebles y <b>cortar con precisión.</b></p>
+<div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
+<div style="margin-top:30px">
+{ficha("06014470H0-000", "Atornillador<br>Bosch GSR 7-14 E", "400 W, servicio pesado<br>y torque de 10,3 Nm", 370, 172220.07)}
+{ficha("060158H0H0-000", "Sierra caladora<br>Bosch GST 75 E", "710 W, 3100 cortes por minuto<br>y corte inclinado a 45°", 370, 313626.98)}
 </div>
+{garantia}
+'''
+
+    p4c = g.MARCA_PRODUCTO + f'''
+<div class="pildora"><i></i>HERRAMIENTAS FEMA</div>
+<h1 style="font-size:88px;margin-top:26px;white-space:nowrap">Compresores<br><em>y clavadoras</em></h1>
+<p class="bajada" style="font-size:36px">Aire comprimido para <b>clavar y engrampar en serie.</b></p>
+<div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
+<div style="margin-top:10px">
+{ficha("69370029", "Compresor DUCA PRO<br>3 HP 180 L", "2 cilindros en V, 220 V<br>con manómetro", 232, 723465.6)}
+{ficha("800060", "Clavadora neumática<br>DUCA de tambor", "Para clavos de 32 a 57 mm<br>y pesa 1,5 kg", 232, 257390.98)}
+{ficha("800416", "Engrampadora<br>neumática DUCA", "Grampas de 4 a 16 mm<br>y pesa 850 g", 232, 42348.94)}
+</div>
+{garantia}
 '''
 
     p5 = f'''
@@ -101,4 +132,4 @@ def placas(g):
 </div>
 <div style="position:absolute;left:0;right:0;bottom:0;height:400px;overflow:hidden"><img src="../../fotos/tornillos-b.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block"></div>
 '''
-    return [("blanca colores-marca", p) for p in (p1, p2, p3, p4, p5)]
+    return [("blanca colores-marca", p) for p in (p1, p2, p3, p4a, p4b, p4c, p5)]
