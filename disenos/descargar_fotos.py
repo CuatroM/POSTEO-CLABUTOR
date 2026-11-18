@@ -35,7 +35,15 @@ def encontrar(sku, consulta):
     if consulta.strip().lower() == "drive":     # "SKU | drive" = buscar directo en Drive
         return encontrar_drive(sku)
     if consulta.strip().lower().startswith("http"):   # "SKU | https://..." = foto de internet, directa
-        return "internet", {"name": sku}, consulta.strip()
+        url = consulta.strip()
+        if not re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I):   # página de producto: su og:image
+            try:
+                url = _og_image(requests.get(url, headers=UA, timeout=40).text) or ""
+            except Exception as ex:  # noqa: BLE001
+                print(f"  {consulta}: error {ex}")
+                return None
+            print(f"  og:image -> {url}")
+        return ("internet", {"name": sku}, url) if url else None
     for sitio in SITIOS:
         for termino in [sku] + ([consulta] if consulta else []):
             try:
