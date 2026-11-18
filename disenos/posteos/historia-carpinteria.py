@@ -4,7 +4,10 @@ Productos con foto real y stock:
 - clabutor.com.ar: autoperforante Tel alas (15108032TELEST), taco Fischer SX 8 (104070008), caja Tel x 10.000 (14108012TEL)
 - FEMA (Drive): taladro de banco 13 mm (69330110), compresor FEMA 2 HP 25 L (69370206), compresor DUCA silencioso
   (69370100), clavadora neumática DUCA (800050), engrampadora neumática DUCA (800040)
-Historia 4: sin sierras circulares, ingletadoras, atornilladores, caladoras ni lijadoras (FEMA no las tiene con foto y stock).
+Historia 4 (sin repetir productos de las otras): Bosch GSB 183-LI, GBH 2-28 D, GSR 7-14 E, GST 75 E y GSB 450 RE
+(fotos de bosch-professional.com/ar), compresor DUCA a correa 180 L (69370029), clavadora de bobina DUCA (800060),
+engrampadora DUCA (800416), martillo bolita y destornillador Vanguard. Sin sierras circulares, ingletadoras ni lijadoras
+(FEMA no las tiene con stock).
 Historia 3: los bulones de clabutor.com.ar no tienen foto -> va la foto del taller, sin productos."""
 
 import importlib.util
@@ -43,8 +46,8 @@ def placas(g):
 <h1 style="font-size:84px;margin-top:26px;white-space:nowrap">¿Tenés una<br>carpintería o una<br><em>fábrica de muebles?</em></h1>
 <p class="bajada" style="font-size:40px">Somos tu proveedor de insumos<br><b>para producir sin frenar.</b></p>
 {ambiente("taller-a.jpg", 400)}
-{fila(foto("15108032TELEST", "max-width:22%;max-height:250px"), foto("69330110", "max-width:18%;max-height:280px"),
-      foto("69370206", "max-width:26%;max-height:230px"), foto("800050", "max-width:22%;max-height:230px"), alto=280)}
+{fila(foto("14614050PC", "max-width:24%;max-height:200px"), foto("69330110", "max-width:16%;max-height:280px"),
+      foto("69370206", "max-width:26%;max-height:220px"), foto("69440103", "max-width:26%;max-height:220px"), alto=280)}
 '''
 
     p2 = f'''
@@ -52,8 +55,8 @@ def placas(g):
 <h1 style="font-size:86px;margin-top:26px;white-space:nowrap">Fijaciones<br><em>para tu producción</em></h1>
 <p class="bajada" style="font-size:36px"><b>Tornillos para madera y aglomerado, autoperforantes, tirafondos, tarugos y clavos,</b> en todas las medidas y por cantidad.</p>
 {ambiente("tornillos-a.jpg", 420, "center 40%")}
-{fila(foto("15108032TELEST", "max-width:34%;max-height:290px"), foto("104070008", "max-width:30%;max-height:110px;margin-bottom:60px"),
-      foto("14108012TEL", "max-width:30%;max-height:230px"), alto=290)}
+{fila(foto("14706025TEL", "max-width:24%;max-height:220px"), foto("15108032TELEST", "max-width:24%;max-height:260px"),
+      foto("104070006", "max-width:22%;max-height:200px"), foto("14110025TELEST", "max-width:24%;max-height:260px"), alto=280)}
 '''
 
     p3 = f'''
@@ -66,12 +69,17 @@ def placas(g):
     p4 = f'''
 <div class="pildora"><i></i>HERRAMIENTAS</div>
 <h1 style="font-size:82px;margin-top:26px;white-space:nowrap">Herramientas FEMA<br><em>para el taller</em></h1>
-<p class="bajada" style="font-size:40px"><b>Taladros, compresores</b><br>y clavadoras neumáticas.</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:330px 300px;gap:18px;margin-top:34px">
-  <div style="display:flex;align-items:flex-end;justify-content:center;border:3px solid #E4E4E4;padding:16px">{foto("69330110", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:flex-end;justify-content:center;border:3px solid #E4E4E4;padding:16px">{foto("69370206", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:flex-end;justify-content:center;border:3px solid #E4E4E4;padding:16px">{foto("69370100", "max-height:100%;max-width:100%")}</div>
-  <div style="display:flex;align-items:flex-end;justify-content:center;gap:10px;border:3px solid #E4E4E4;padding:16px">{foto("800050", "max-height:100%;max-width:48%")}{foto("800040", "max-height:100%;max-width:48%")}</div>
+<p class="bajada" style="font-size:36px"><b>Taladros, perforadoras, atornilladores, caladoras,</b> compresores, clavadoras neumáticas y herramientas manuales.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,215px);gap:14px;margin-top:30px">
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06019K91E6-000", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06112673H0-000", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06014470H0-000", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("060158H0H0-000", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("06011B50H0-000", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("69370029", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("800060", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("800416", "max-height:100%;max-width:100%")}</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #E4E4E4;padding:12px;min-height:0">{foto("69411150", "max-height:100%;max-width:55%")}{foto("69435565", "max-height:100%;max-width:40%")}</div>
 </div>
 <div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:26px;background:{ROJO};color:#fff;padding:22px 34px">
   <span style="font-family:Titular;font-weight:900;font-size:104px;line-height:.85;letter-spacing:-4px">6</span>
