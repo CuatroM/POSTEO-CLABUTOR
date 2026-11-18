@@ -34,6 +34,8 @@ def norm(s):
 def encontrar(sku, consulta):
     if consulta.strip().lower() == "drive":     # "SKU | drive" = buscar directo en Drive
         return encontrar_drive(sku)
+    if consulta.strip().lower().startswith("http"):   # "SKU | https://..." = foto de internet, directa
+        return "internet", {"name": sku}, consulta.strip()
     for sitio in SITIOS:
         for termino in [sku] + ([consulta] if consulta else []):
             try:
