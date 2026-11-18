@@ -82,7 +82,7 @@ def placas(g):
 
     p4a = g.MARCA_PRODUCTO + f'''
 <div class="pildora"><i></i>TALADROS</div>
-<h1 style="font-size:82px;margin-top:26px;white-space:nowrap">Herramientas FEMA<br><em>para el taller</em></h1>
+<h1 style="font-size:96px;margin-top:26px;white-space:nowrap">Herramientas<br><em>para el taller</em></h1>
 <p class="bajada" style="font-size:36px"><b>Taladros y perforadoras</b> para cada trabajo.</p>
 <div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
 <div style="margin-top:10px">
@@ -94,7 +94,7 @@ def placas(g):
 '''
 
     p4b = g.MARCA_PRODUCTO + f'''
-<div class="pildora"><i></i>HERRAMIENTAS FEMA</div>
+<div class="pildora"><i></i>HERRAMIENTAS</div>
 <h1 style="font-size:88px;margin-top:26px;white-space:nowrap">Atornilladores<br><em>y caladoras</em></h1>
 <p class="bajada" style="font-size:36px">Para armar muebles y <b>cortar con precisión.</b></p>
 <div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
@@ -106,7 +106,7 @@ def placas(g):
 '''
 
     p4c = g.MARCA_PRODUCTO + f'''
-<div class="pildora"><i></i>HERRAMIENTAS FEMA</div>
+<div class="pildora"><i></i>HERRAMIENTAS</div>
 <h1 style="font-size:88px;margin-top:26px;white-space:nowrap">Compresores<br><em>y clavadoras</em></h1>
 <p class="bajada" style="font-size:36px">Aire comprimido para <b>clavar y engrampar en serie.</b></p>
 <div style="display:inline-block;background:#111;color:#fff;font-family:Titular;font-weight:900;font-size:26px;letter-spacing:2px;padding:10px 18px;margin-top:16px">ENVÍO GRATIS POR TRANSPORTE CREDEFIN</div>
