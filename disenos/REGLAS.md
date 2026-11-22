@@ -53,4 +53,5 @@
 - Función lista para usar: `precio_envio_gratis(costo)` en `disenos/generar.py`.
 
 ## Envíos
-- Los envíos a todo el país son siempre por transporte Credefin: decirlo en la pieza ("Envíos a todo el país por transporte Credefin" / "Envío gratis por transporte Credefin").
+- "Envíos a todo el país" (sin envío gratis): se pone así, sin mencionar la empresa; el precio NO incluye envío (costo + 35 %).
+- Envío gratis a todo el país: siempre "por transporte Credefin"; el precio incluye el envío (costo + 35 % + 10 % del costo, mínimo $20.000).

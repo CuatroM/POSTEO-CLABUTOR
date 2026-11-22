@@ -64,7 +64,7 @@ def placas(g):
 <div style="position:absolute;left:0;right:0;bottom:0">
   <div style="background:{NEGRO};color:#fff;padding:24px 32px;font-family:Titular;font-weight:900;font-size:44px;line-height:1.08">Tu taller, siempre<br>con aire a presión.</div>
   <div style="display:flex;align-items:center;gap:22px;background:{ROJO};color:#fff;padding:20px 32px">{camion(70)}
-    <span style="font-family:Titular;font-weight:900;font-size:34px;letter-spacing:2px;line-height:1.1">ENVÍOS A TODO EL PAÍS<br>POR TRANSPORTE CREDEFIN</span></div>
+    <span style="font-family:Titular;font-weight:900;font-size:40px;letter-spacing:2px">ENVÍOS A TODO EL PAÍS</span></div>
 </div>
 '''
     salida = [("blanca colores-marca", portada)]
