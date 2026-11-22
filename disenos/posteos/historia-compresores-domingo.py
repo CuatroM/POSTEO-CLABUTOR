@@ -47,10 +47,10 @@ def placa_producto(g, sku, nombre, rasgo, costo, titulo, uso):
 <div class="pildora"><i></i>PRECIO ESPECIAL</div>
 <h1 style="font-size:108px;margin-top:22px;white-space:nowrap">{titulo}</h1>
 <p class="bajada" style="font-size:38px;margin-top:16px">{uso}</p>
-<div style="height:640px;margin-top:20px;border-top:3px solid {NEGRO};display:flex;align-items:center;justify-content:center">{foto(sku, "max-width:96%;max-height:600px")}</div>
+<div style="position:relative;height:640px;margin-top:20px;border-top:3px solid {NEGRO};display:flex;align-items:center;justify-content:center">{foto(sku, "max-width:96%;max-height:560px")}
+  <div style="position:absolute;top:20px;left:0;background:{NEGRO};color:#fff;font-family:Titular;font-weight:900;font-size:34px;letter-spacing:2px;padding:10px 18px">SKU {sku}</div></div>
 <div style="font-family:Titular;font-weight:900;font-size:44px;line-height:1.05;letter-spacing:-.5px;margin-top:10px">{nombre}</div>
 <div style="font-weight:600;font-size:28px;color:#555;margin-top:8px">{rasgo}</div>
-<div style="font-weight:700;font-size:24px;letter-spacing:2px;color:#8A8A8A;margin-top:6px">SKU {sku}</div>
 <div style="font-family:Titular;font-weight:900;font-size:130px;letter-spacing:-5px;line-height:1;color:{ROJO};margin-top:10px">{pesos(costo * MARGEN)}</div>
 '''
 
