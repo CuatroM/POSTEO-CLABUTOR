@@ -51,3 +51,6 @@
   - Se aplica en **todas** las piezas con envío gratis (historias y posteos), salvo que el contenido indique otro precio.
 - Solo productos **con stock** y **con foto**. Para tener stock y costo al día, correr antes el export de BaseLinker (`bl_exportar.yml`, buscar "COMPLETO FEMA").
 - Función lista para usar: `precio_envio_gratis(costo)` en `disenos/generar.py`.
+
+## Envíos
+- Los envíos a todo el país son siempre por transporte Credefin: decirlo en la pieza ("Envíos a todo el país por transporte Credefin" / "Envío gratis por transporte Credefin").
